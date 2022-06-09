@@ -1,0 +1,2335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="./tei_custom.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="./tei_custom.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Der Archipelagus</title>
+        <author when="1801">Friedrich Hölderlin</author>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>Jakob Hillebrand</distributor>
+        <date when="2022">2022</date>
+        <availability status="free">
+          <licence>Licence: Creative Commons BY 4.0 International (CC BY 4.0)</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <listWit>
+          <witness xml:id="H1">
+            <msDesc>
+              <msIdentifier>
+                <settlement>Stuttgart</settlement>
+                <repository>Württembergische Landesbibliothek</repository>
+                <idno type="WLB">Cod.poet.et.phil.fol.63,I,33</idno>
+              </msIdentifier>
+            </msDesc>
+          </witness>
+          <witness xml:id="H2">
+            <msDesc>
+              <msIdentifier>
+                <settlement>Stuttgart</settlement>
+                <repository>Württembergische Landesbibliothek</repository>
+                <idno type="WLB">Cod.hist.qt.626,IX</idno>
+              </msIdentifier>
+            </msDesc>
+          </witness>
+          <witness xml:id="H3">
+            <msDesc>
+              <msIdentifier>
+                <settlement>Stuttgart</settlement>
+                <repository>Württembergische Landesbibliothek</repository>
+                <idno type="WLB">Der Archipelagus - Homburg.C</idno>
+              </msIdentifier>
+            </msDesc>
+          </witness>
+          <witness xml:id="H4">
+            <msDesc>
+              <msIdentifier>
+                <settlement>Stuttgart</settlement>
+                <repository>Württembergische Landesbibliothek</repository>
+                <idno type="WLB">Cod.poet.et.phil.qt.230</idno>
+              </msIdentifier>
+            </msDesc>
+          </witness>
+          <witness xml:id="J">
+            <bibl>
+              <editor>Ludwig Ferdinand Huber</editor>
+              <title>Vierteljährliche Unterhaltungen. Herausgegeben von L. F. Huber. Drittes Stück</title>
+              <publisher>J. G. Cotta'schen Buchhandlung</publisher>
+              <pubPlace>Tübingen</pubPlace>
+              <date when="1804">1804</date>
+            </bibl>
+          </witness>
+        </listWit>
+        <listPlace>
+          <place xml:id="aegyptos">
+            <placeName><country>Aegyptos</country></placeName>
+          </place>
+          <place xml:id="aether">
+            <placeName>Aether</placeName>
+          </place>
+          <place xml:id="aetna">
+            <placeName type="vulcano">Aetna</placeName>
+          </place>
+          <place xml:id="agora">
+            <placeName>Agora</placeName>
+          </place>
+          <place xml:id="asien">
+            <placeName><bloc type="continent">Asien</bloc></placeName>
+          </place>
+          <place xml:id="athen">
+            <placeName><settlement>Athen</settlement></placeName>
+          </place>
+          <place xml:id="chaeronea">
+            <placeName><settlement>Chäronea</settlement></placeName>
+          </place>
+          <place xml:id="chios">
+            <placeName><region type="island">Chios</region></placeName>
+          </place>
+          <place xml:id="cypros">
+            <placeName><region type="island">Cypros</region></placeName>
+          </place>
+          <place xml:id="delphi">
+            <placeName><settlement>Delphi</settlement></placeName>
+          </place>
+          <place xml:id="delos">
+            <placeName><region type="island">Delos</region></placeName>
+          </place>
+          <place xml:id="dodona">
+            <placeName><settlement>Dodona</settlement></placeName>
+          </place>
+          <place xml:id="ekbatana">
+            <placeName><settlement>Ekbatana</settlement></placeName>
+          </place>
+          <place xml:id="griechenland">
+            <placeName><country>Griechenland</country></placeName>
+            <placeName><country>Hellas</country></placeName>
+          </place>
+          <place xml:id="gymnasien">
+            <placeName>Gymnasien</placeName>
+          </place>
+          <place xml:id="ilissus">
+            <placeName type="stream">Ilissus</placeName>
+          </place>
+          <place xml:id="ionien">
+            <placeName><region>Ionien</region></placeName>
+          </place>
+          <place xml:id="kalauria">
+            <placeName><region>Kalauria</region></placeName>
+          </place>
+          <place xml:id="kastalia">
+            <placeName type="stream">Kastalia</placeName>
+          </place>
+          <place xml:id="kayster">
+            <placeName type="stream">Kayster</placeName>
+          </place>
+          <place xml:id="kolchis">
+            <placeName><region>Kolchis</region></placeName>
+          </place>
+          <place xml:id="kolonos">
+            <placeName type="mountain">Kolonos</placeName>
+          </place>
+          <place xml:id="kreta">
+            <placeName><region type="island">Kreta</region></placeName>
+          </place>
+          <place xml:id="lethe">
+            <placeName>Lethe</placeName>
+          </place>
+          <place xml:id="maeander">
+            <placeName type="stream">Mäander</placeName>
+          </place>
+          <place xml:id="marathon">
+            <placeName><settlement>Marathon</settlement></placeName>
+          </place>
+          <place xml:id="nil">
+            <placeName type="stream">Nil</placeName>
+          </place>
+          <place xml:id="oeta">
+            <placeName type="mountain">Öta</placeName>
+          </place>
+          <place xml:id="olympion">
+            <placeName type="temple">Olympion</placeName>
+          </place>
+          <place xml:id="orient">
+            <placeName><bloc>Orient</bloc></placeName>
+          </place>
+          <place xml:id="orkus">
+            <placeName>Orkus</placeName>
+          </place>
+          <place xml:id="parnassos">
+            <placeName type="mountain">Parnassos</placeName>
+          </place>
+          <place xml:id="pentele">
+            <placeName type="mountain">Pentele</placeName>
+          </place>
+          <place xml:id="salamis">
+            <placeName><region type="island">Salamis</region></placeName>
+          </place>
+          <place xml:id="sparta">
+            <placeName><settlement>Sparta</settlement></placeName>
+          </place>
+          <place xml:id="tempe">
+            <placeName><region>Tempe</region></placeName>
+          </place>
+          <place xml:id="tenos">
+            <placeName><region type="island">Tenos</region></placeName>
+          </place>
+          <place xml:id="tyros">
+            <placeName><settlement>Tyros</settlement></placeName>
+          </place>
+        </listPlace>
+        <listPerson>
+          <person xml:id="athene">
+            <persName>Athene</persName>
+          </person>
+          <personGrp xml:id="athener_innen">
+            <persName>Athener</persName>
+            <persName>Athenerinnen</persName>
+          </personGrp>
+          <personGrp xml:id="cyprier">
+            <persName>Cyprier</persName>
+          </personGrp>
+          <personGrp xml:id="furien">
+            <persName>Furien</persName>
+          </personGrp>
+          <personGrp xml:id="griechen">
+            <persName>Griechen</persName>
+          </personGrp>
+          <person xml:id="herkules">
+            <persName>Herkules</persName>
+          </person>
+          <person xml:id="perse">
+            <persName>Perse</persName>
+          </person>
+          <personGrp xml:id="prytanen">
+            <persName>Prytanen</persName>
+          </personGrp>
+        </listPerson>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de">Deutsch (Kurrentschrift, Fraktur)</language>
+      </langUsage>
+      <textDesc n="poem">
+        <channel mode="w">Manuskript, Print</channel>
+        <constitution type="single"/>
+        <derivation type="original"/>
+        <domain type="public"/>
+        <factuality type="mixed"/>
+        <interaction type="inapplicable" active="plural" passive="world"/>
+        <preparedness type="revised"/>
+        <purpose type="entertain"/>
+        <purpose type="inform"/>
+        <purpose type="express"/>
+      </textDesc>
+    </profileDesc>
+    <encodingDesc>
+      <variantEncoding method="location-referenced" location="external"></variantEncoding>
+    </encodingDesc>
+  </teiHeader>
+
+  <facsimile corresp="#H1">
+    <surface xml:id="H1_1r" facs="./img/facs/H1_1r_[1].jpg"></surface>
+    <surface xml:id="H1_1v" facs="./img/facs/H1_1v_[2].jpg"></surface>
+    <surface xml:id="H1_2r" facs="./img/facs/H1_2r_[3].jpg"></surface>
+    <surface xml:id="H1_2v" facs="./img/facs/H1_2v_[4].jpg"></surface>
+  </facsimile>
+  <facsimile corresp="#H2">
+    <surface xml:id="H2_1r" facs="./img/facs/H2_1r_[1].jpg"></surface>
+    <surface xml:id="H2_1v" facs="./img/facs/H2_1v_[2].jpg"></surface>
+  </facsimile>
+  <facsimile corresp="#H3">
+    <surface xml:id="H3_1r" facs="./img/facs/H3_1r_[1].jpg"></surface>
+    <surface xml:id="H3_1v" facs="./img/facs/H3_1v_[2].jpg"></surface>
+    <surface xml:id="H3_2r" facs="./img/facs/H3_2r_[3].jpg"></surface>
+    <surface xml:id="H3_2v" facs="./img/facs/H3_2v_[4].jpg"></surface>
+    <surface xml:id="H3_3r" facs="./img/facs/H3_3r_[5].jpg"></surface>
+    <surface xml:id="H3_3v" facs="./img/facs/H3_3v_[6].jpg"></surface>
+    <surface xml:id="H3_4r" facs="./img/facs/H3_4r_[7].jpg"></surface>
+    <surface xml:id="H3_4v" facs="./img/facs/H3_4v_[8].jpg"></surface>
+    <surface xml:id="H3_5r" facs="./img/facs/H3_5r_[9].jpg"></surface>
+    <surface xml:id="H3_5v" facs="./img/facs/H3_5v_[10].jpg"></surface>
+    <surface xml:id="H3_6r" facs="./img/facs/H3_6r_[11].jpg"></surface>
+    <surface xml:id="H3_6v" facs="./img/facs/H3_6v_[12].jpg"></surface>
+    <surface xml:id="H3_7r" facs="./img/facs/H3_7r_[13].jpg"></surface>
+    <surface xml:id="H3_7v" facs="./img/facs/H3_7v_[14].jpg"></surface>
+    <surface xml:id="H3_8r" facs="./img/facs/H3_8r_[15].jpg"></surface>
+    <surface xml:id="H3_8v" facs="./img/facs/H3_8v_[16].jpg"></surface>
+  </facsimile>
+  <facsimile corresp="#H4">
+    <surface xml:id="H4_1r" facs="./img/facs/H4_1r_[1].jpg"></surface>
+    <surface xml:id="H4_1v" facs="./img/facs/H4_1v_[2].jpg"></surface>
+    <surface xml:id="H4_2r" facs="./img/facs/H4_2r_[3].jpg"></surface>
+    <surface xml:id="H4_2v" facs="./img/facs/H4_2v_[4].jpg"></surface>
+    <surface xml:id="H4_3r" facs="./img/facs/H4_3r_[5].jpg"></surface>
+    <surface xml:id="H4_3v" facs="./img/facs/H4_3v_[6].jpg"></surface>
+    <surface xml:id="H4_4r" facs="./img/facs/H4_4r_[7].jpg"></surface>
+    <surface xml:id="H4_4v" facs="./img/facs/H4_4v_[8].jpg"></surface>
+    <surface xml:id="H4_5r" facs="./img/facs/H4_5r_[9].jpg"></surface>
+    <surface xml:id="H4_5v" facs="./img/facs/H4_5v_[10].jpg"></surface>
+    <surface xml:id="H4_6r" facs="./img/facs/H4_6r_[11].jpg"></surface>
+    <surface xml:id="H4_6v" facs="./img/facs/H4_6v_[12].jpg"></surface>
+    <surface xml:id="H4_7r" facs="./img/facs/H4_7r_[13].jpg"></surface>
+    <surface xml:id="H4_7v" facs="./img/facs/H4_7v_[14].jpg"></surface>
+    <surface xml:id="H4_8r" facs="./img/facs/H4_8r_[15].jpg"></surface>
+    <surface xml:id="H4_8v" facs="./img/facs/H4_8v_[16].jpg"></surface>
+    <surface xml:id="H4_9r" facs="./img/facs/H4_9r_[17].jpg"></surface>
+    <surface xml:id="H4_9v" facs="./img/facs/H4_9v_[18].jpg"></surface>
+  </facsimile>
+  <facsimile corresp="#J">
+    <surface xml:id="J_168-169" facs="./img/facs/J_168-169_[1].png"></surface>
+    <surface xml:id="J_170-171" facs="./img/facs/J_170-171_[2].png"></surface>
+    <surface xml:id="J_172-173" facs="./img/facs/J_172-173_[3].png"></surface>
+    <surface xml:id="J_174-175" facs="./img/facs/J_174-175_[4].png"></surface>
+    <surface xml:id="J_176-177" facs="./img/facs/J_176-177_[5].png"></surface>
+    <surface xml:id="J_178-179" facs="./img/facs/J_178-179_[6].png"></surface>
+    <surface xml:id="J_180-181" facs="./img/facs/J_180-181_[7].png"></surface>
+    <surface xml:id="J_182-183" facs="./img/facs/J_182-183_[8].png"></surface>
+    <surface xml:id="J_184-185" facs="./img/facs/J_184-185_[9].png"></surface>
+    <surface xml:id="J_186-187" facs="./img/facs/J_186-187_[10].png"></surface>
+    <surface xml:id="J_188-189" facs="./img/facs/J_188-189_[11].png"></surface>
+    <surface xml:id="J_190-191" facs="./img/facs/J_190-191_[12].png"></surface>
+  </facsimile>
+
+  <text>
+    <body>
+      <div>
+        <head>Der Archipelagus</head>
+        <lg>
+          <l n="1">Kehren die Kraniche wieder zu dir, und <choice><orig><choice><orig>ſ</orig><reg>s</reg></choice></orig><reg>s</reg></choice>uchen zu deinen</l>
+          <l n="2">Ufern wieder die Schiffe den Lauf? umathmen erw<choice><orig>uͤ</orig><reg>ü</reg></choice>n<choice><orig>ſ</orig><reg>s</reg></choice>chte</l>
+          <l n="3">L<choice><orig>uͤ</orig><reg>ü</reg></choice>fte dir die beruhigte Fluth, und <choice><orig>ſ</orig><reg>s</reg></choice>o<choice><orig>n̄</orig><reg>nn</reg></choice>et der Delphin,</l>
+          <l n="4">Aus der Tiefe gelokt, am neuen Lichte den R<choice><orig>uͤ</orig><reg>ü</reg></choice>ken?</l>
+          <l n="5">Bl<choice><orig>uͤ</orig><reg>ü</reg></choice>ht <placeName ref="#ionien">Ionien</placeName>? i<choice><orig>ſ</orig><reg>s</reg></choice>ts die Zeit? de<choice><orig>n̄</orig><reg>nn</reg></choice> i<choice><orig>m̅</orig><reg>mm</reg></choice>er im Fr<choice><orig>uͤ</orig><reg>ü</reg></choice>hling,</l>
+          <l n="6">We<choice><orig>n̄</orig><reg>nn</reg></choice> den Lebenden <choice><orig>ſ</orig><reg>s</reg></choice>ich das Herz erneut und die er<choice><orig>ſ</orig><reg>s</reg></choice>te</l>
+          <l n="7">Liebe den Men<choice><orig>ſ</orig><reg>s</reg></choice>chen erwacht und goldner Zeiten Eri<choice><orig>n̄</orig><reg>nn</reg></choice>rung,</l>
+          <l n="8">Ko<choice><orig>m̅</orig><reg>mm</reg></choice>’ ich zu dir und gr<choice><orig>uͤ</orig><reg>ü</reg></choice>ß’ in deiner Stille dich, Alter!</l>
+        </lg>
+        <lg>
+          <l n="9">I<choice><orig>m̅</orig><reg>mm</reg></choice>er, Gewaltiger! leb<choice><orig>ſ</orig><reg>s</reg></choice>t du noch und ruhe<choice><orig>ſ</orig><reg>s</reg></choice>t im Schatten</l>
+          <l n="10">Deiner Berge, wie <choice><orig>ſ</orig><reg>s</reg></choice>on<choice><orig>ſ</orig><reg>s</reg></choice>t; mit J<choice><orig>uͤ</orig><reg>ü</reg></choice>nglingsarmen umf<choice><orig>aͤ</orig><reg>ä</reg></choice>ng<choice><orig>ſ</orig><reg>s</reg></choice>t du</l>
+          <l n="11">Noch dein liebliches Land, und deiner T<choice><orig>oͤ</orig><reg>ö</reg></choice>chter, o Vater!</l>
+          <l n="12">Deiner In<choice><orig>ſ</orig><reg>s</reg></choice>eln i<choice><orig>ſ</orig><reg>s</reg></choice>t noch, der bl<choice><orig>uͤ</orig><reg>ü</reg></choice>henden, keine verloren.</l>
+          <l n="13"><placeName ref="#kreta">Kreta</placeName> <choice><orig>ſ</orig><reg>s</reg></choice>teht und <placeName ref="#salamis">Salamis</placeName> gr<choice><orig>uͤ</orig><reg>ü</reg></choice>nt, umd<choice><orig>aͤ</orig><reg>ä</reg></choice><choice><orig>m̅</orig><reg>mm</reg></choice>ert von Lorbeern,</l>
+          <l n="14">Rings von Stralen umbl<choice><orig>uͤ</orig><reg>ü</reg></choice>ht, erhebt zur Stunde des Aufgangs</l>
+          <l n="15"><placeName ref="#delos">Delos</placeName> ihr begei<choice><orig>ſ</orig><reg>s</reg></choice>tertes Haupt, und <placeName ref="#tenos">Tenos</placeName> und <placeName ref="#chios">Chios</placeName></l>
+          <l n="16">Haben der purpurnen Fr<choice><orig>uͤ</orig><reg>ü</reg></choice>chte genug, von trunkenen H<choice><orig>uͤ</orig><reg>ü</reg></choice>geln</l>
+          <l n="17">Quillt der <persName ref="#cyprier">Cyprier</persName>trank, und von <placeName ref="#kalauria">Kalauria</placeName> fallen</l>
+          <l n="18">Silberne B<choice><orig>aͤ</orig><reg>ä</reg></choice>che, wie ein<choice><orig>ſ</orig><reg>s</reg></choice>t, in die alten Wa<choice><orig>ſſ</orig><reg>ss</reg></choice>er des Vaters.</l>
+          <l n="19">Alle leben <choice><orig>ſ</orig><reg>s</reg></choice>ie noch, die Heroënm<choice><orig>uͤ</orig><reg>ü</reg></choice>tter, die In<choice><orig>ſ</orig><reg>s</reg></choice>eln,</l>
+          <l n="20">Bl<choice><orig>uͤ</orig><reg>ü</reg></choice>hend von Jahr zu Jahr, und we<choice><orig>n̄</orig><reg>nn</reg></choice> zu Zeiten, vom Abgrund</l>
+          <l n="21">Losgela<choice><orig>ſſ</orig><reg>ss</reg></choice>en, die Fla<choice><orig>m̅</orig><reg>mm</reg></choice>e der Nacht, das untre Gewitter,</l>
+          <l n="22">Eine der holden ergriff, und die Sterbende dir in den Schoos <choice><orig>ſ</orig><reg>s</reg></choice>ank,</l>
+          <l n="23">G<choice><orig>oͤ</orig><reg>ö</reg></choice>ttlicher! du, du dauerte<choice><orig>ſ</orig><reg>s</reg></choice>t aus, de<choice><orig>n̄</orig><reg>nn</reg></choice> <choice><orig>uͤ</orig><reg>ü</reg></choice>ber den dunkeln</l>
+          <l n="24">Tiefen i<choice><orig>ſ</orig><reg>s</reg></choice>t manches <choice><orig>ſ</orig><reg>s</reg></choice>chon dir auf und untergegangen.</l>
+        </lg>
+        <lg>
+          <l n="25">Auch die Hi<choice><orig>m̅</orig><reg>mm</reg></choice>li<choice><orig>ſ</orig><reg>s</reg></choice>chen, <choice><orig>ſ</orig><reg>s</reg></choice>ie, die Kr<choice><orig>aͤ</orig><reg>ä</reg></choice>fte der H<choice><orig>oͤ</orig><reg>ö</reg></choice>he, die <choice><orig>ſ</orig><reg>s</reg></choice>tillen,</l>
+          <l n="26">Die den heiteren Tag und <choice><orig>ſ</orig><reg>s</reg></choice><choice><orig>uͤ</orig><reg>ü</reg></choice>ßen Schlu<choice><orig>m̅</orig><reg>mm</reg></choice>er und Ahnung</l>
+          <l n="27">Fernher bringen <choice><orig>uͤ</orig><reg>ü</reg></choice>ber das Haupt der f<choice><orig>uͤ</orig><reg>ü</reg></choice>hlenden Men<choice><orig>ſ</orig><reg>s</reg></choice>chen</l>
+          <l n="28">Aus der F<choice><orig>uͤ</orig><reg>ü</reg></choice>lle der Macht, auch <choice><orig>ſ</orig><reg>s</reg></choice>ie, die alten Ge<choice><orig>ſ</orig><reg>s</reg></choice>pielen,</l>
+          <l n="29">Wohnen, wie ein<choice><orig>ſ</orig><reg>s</reg></choice>t, mit dir, und oft am d<choice><orig>aͤ</orig><reg>ä</reg></choice><choice><orig>m̅</orig><reg>mm</reg></choice>ernden Abend,</l>
+          <l n="30">We<choice><orig>n̄</orig><reg>nn</reg></choice> von <placeName ref="#asien">A<choice><orig>ſ</orig><reg>s</reg></choice>ien</placeName>s Bergen herein das heilige Mondlicht</l>
+          <l n="31">K<choice><orig>oͤ</orig><reg>ö</reg></choice><choice><orig>m̅</orig><reg>mm</reg></choice>t und die Sterne <choice><orig>ſ</orig><reg>s</reg></choice>ich in deiner Wooge begegnen,</l>
+          <l n="32">Leuchte<choice><orig>ſ</orig><reg>s</reg></choice>t du von hi<choice><orig>m̅</orig><reg>mm</reg></choice>li<choice><orig>ſ</orig><reg>s</reg></choice>chem Glanz, und <choice><orig>ſ</orig><reg>s</reg></choice>o, wie <choice><orig>ſ</orig><reg>s</reg></choice>ie wandeln,</l>
+          <l n="33">Wech<choice><orig>ſ</orig><reg>s</reg></choice>eln die Wa<choice><orig>ſſ</orig><reg>ss</reg></choice>er dir, es t<choice><orig>oͤ</orig><reg>ö</reg></choice>nt die Wei<choice><orig>ſ</orig><reg>s</reg></choice>e der Br<choice><orig>uͤ</orig><reg>ü</reg></choice>der</l>
+          <l n="34">Droben, ihr Nachtge<choice><orig>ſ</orig><reg>s</reg></choice>ang, im liebenden Bu<choice><orig>ſ</orig><reg>s</reg></choice>en dir wieder.</l>
+          <l n="35">We<choice><orig>n̄</orig><reg>nn</reg></choice> die allverkl<choice><orig>aͤ</orig><reg>ä</reg></choice>rende da<choice><orig>n̄</orig><reg>nn</reg></choice>, die So<choice><orig>n̄</orig><reg>nn</reg></choice>e des Tages,</l>
+          <l n="36">Sie, des <placeName ref="#orient">Orient</placeName>s Kind, die Wunderth<choice><orig>aͤ</orig><reg>ä</reg></choice>tige, da i<choice><orig>ſ</orig><reg>s</reg></choice>t,</l>
+          <l n="37">Da<choice><orig>n̄</orig><reg>nn</reg></choice> die Lebenden all’ im goldenen Traume begi<choice><orig>n̄</orig><reg>nn</reg></choice>en,</l>
+          <l n="38">Den die Dichtende <choice><orig>ſ</orig><reg>s</reg></choice>tets des Morgens ihnen bereitet,</l>
+          <l n="39">Dir, dem trauernden Gott, dir <choice><orig>ſ</orig><reg>s</reg></choice>endet <choice><orig>ſ</orig><reg>s</reg></choice>ie froheren Zauber,</l>
+          <l n="40">Und ihr eigen freundliches Licht i<choice><orig>ſ</orig><reg>s</reg></choice>t <choice><orig>ſ</orig><reg>s</reg></choice>elber <choice><orig>ſ</orig><reg>s</reg></choice>o <choice><orig>ſ</orig><reg>s</reg></choice>ch<choice><orig>oͤ</orig><reg>ö</reg></choice>n nicht</l>
+          <l n="41">De<choice><orig>n̄</orig><reg>nn</reg></choice> das Liebeszeichen, der Kranz, den i<choice><orig>m̅</orig><reg>mm</reg></choice>er, wie vormals,</l>
+          <l n="42">Deiner gedenk, doch <choice><orig>ſ</orig><reg>s</reg></choice>ie um die graue Loke dir windet.</l>
+          <l n="43">Und umf<choice><orig>aͤ</orig><reg>ä</reg></choice>ngt der <placeName ref="#aether">Aether</placeName> dich nicht, und kehren die Wolken,</l>
+          <l n="44">Deine Boten, von ihm mit dem G<choice><orig>oͤ</orig><reg>ö</reg></choice>tterge<choice><orig>ſ</orig><reg>s</reg></choice>chenke, dem Strale</l>
+          <l n="45">Aus der H<choice><orig>oͤ</orig><reg>ö</reg></choice>he dir nicht? da<choice><orig>n̄</orig><reg>nn</reg></choice> <choice><orig>ſ</orig><reg>s</reg></choice>endest du <choice><orig>uͤ</orig><reg>ü</reg></choice>ber das Land <choice><orig>ſ</orig><reg>s</reg></choice>ie,</l>
+          <l n="46">Daß am heißen Ge<choice><orig>ſ</orig><reg>s</reg></choice>tad die gewittertrunkenen W<choice><orig>aͤ</orig><reg>ä</reg></choice>lder</l>
+          <l n="47">Rau<choice><orig>ſ</orig><reg>s</reg></choice>chen und woogen mit dir, daß bald, dem wandernden Sohn gleich,</l>
+          <l n="48">We<choice><orig>n̄</orig><reg>nn</reg></choice> der Vater ihn ruft, mit den tau<choice><orig>ſ</orig><reg>s</reg></choice>end B<choice><orig>aͤ</orig><reg>ä</reg></choice>chen <placeName ref="#maeander">M<choice><orig>aͤ</orig><reg>ä</reg></choice>ander</placeName></l>
+          <l n="49">Seinen Irren enteilt und aus der Ebne <placeName ref="#kayster">Kay<choice><orig>ſ</orig><reg>s</reg></choice>ter</placeName></l>
+          <l n="50">Dir entgegenfrohlokt, und der Er<choice><orig>ſ</orig><reg>s</reg></choice>tgeborne, der Alte,</l>
+          <l n="51">Der zu lange <choice><orig>ſ</orig><reg>s</reg></choice>ich barg, dein maje<choice><orig>ſ</orig><reg>s</reg></choice>t<choice><orig>aͤ</orig><reg>ä</reg></choice>ti<choice><orig>ſ</orig><reg>s</reg></choice>cher <placeName ref="#nil">Nil</placeName> izt</l>
+          <l n="52">Hochher<choice><orig>ſ</orig><reg>s</reg></choice>chreitend aus fernem Gebirg, wie im Klange der Waffen,</l>
+          <l n="53">Siegreich k<choice><orig>oͤ</orig><reg>ö</reg></choice><choice><orig>m̅</orig><reg>mm</reg></choice>t, und die offenen Arme der <choice><orig>ſ</orig><reg>s</reg></choice>ehnende reichet.</l>
+        </lg>
+        <lg>
+          <l n="54">De<choice><orig>n̄</orig><reg>nn</reg></choice>och ein<choice><orig>ſ</orig><reg>s</reg></choice>am d<choice><orig>uͤ</orig><reg>ü</reg></choice>nke<choice><orig>ſ</orig><reg>s</reg></choice>t du dir; in <choice><orig>ſ</orig><reg>s</reg></choice>chweigender Nacht h<choice><orig>oͤ</orig><reg>ö</reg></choice>rt</l>
+          <l n="55">Deine Weheklage der Fels, und <choice><orig>oͤ</orig><reg>ö</reg></choice>fters entflieht dir</l>
+          <l n="56">Z<choice><orig>uͤ</orig><reg>ü</reg></choice>rnend von Sterblichen weg die gefl<choice><orig>uͤ</orig><reg>ü</reg></choice>gelte Wooge zum Hi<choice><orig>m̅</orig><reg>mm</reg></choice>el.</l>
+          <l n="57">De<choice><orig>n̄</orig><reg>nn</reg></choice> es leben mit dir die edlen Lieblinge ni<choice><orig>m̅</orig><reg>mm</reg></choice>er,</l>
+          <l n="58">Die dich geehrt, die ein<choice><orig>ſ</orig><reg>s</reg></choice>t mit den <choice><orig>ſ</orig><reg>s</reg></choice>ch<choice><orig>oͤ</orig><reg>ö</reg></choice>nen Tempeln und St<choice><orig>aͤ</orig><reg>ä</reg></choice>dten</l>
+          <l n="59">Deine Ge<choice><orig>ſ</orig><reg>s</reg></choice>tade bekr<choice><orig>aͤ</orig><reg>ä</reg></choice>nzt, und i<choice><orig>m̅</orig><reg>mm</reg></choice>er <choice><orig>ſ</orig><reg>s</reg></choice>uchen und mi<choice><orig>ſſ</orig><reg>ss</reg></choice>en,</l>
+          <l n="60">I<choice><orig>m̅</orig><reg>mm</reg></choice>er bed<choice><orig>uͤ</orig><reg>ü</reg></choice>rfen ja, wie Heroën den Kranz, die geweihten</l>
+          <l n="61">Elemente zum Ruhme das Herz der f<choice><orig>uͤ</orig><reg>ü</reg></choice>hlenden Men<choice><orig>ſ</orig><reg>s</reg></choice>chen.</l>
+        </lg>
+        <lg>
+          <l n="62">Sage, wo i<choice><orig>ſ</orig><reg>s</reg></choice>t <placeName ref="#athen">Athen</placeName>? i<choice><orig>ſ</orig><reg>s</reg></choice>t <choice><orig>uͤ</orig><reg>ü</reg></choice>ber den Urnen der Mei<choice><orig>ſ</orig><reg>s</reg></choice>ter</l>
+          <l n="63">Deine Stadt, die geliebte<choice><orig>ſ</orig><reg>s</reg></choice>te dir, an den heiligen Ufern,</l>
+          <l n="64">Trauernder Gott! dir ganz in A<choice><orig>ſ</orig><reg>s</reg></choice>che zu<choice><orig>ſ</orig><reg>s</reg></choice>a<choice><orig>m̅</orig><reg>mm</reg></choice>enge<choice><orig>ſ</orig><reg>s</reg></choice>unken,</l>
+          <l n="65">Oder i<choice><orig>ſ</orig><reg>s</reg></choice>t noch ein Zeichen von ihr, daß etwa der Schiffer,</l>
+          <l n="66">We<choice><orig>n̄</orig><reg>nn</reg></choice> er vor<choice><orig>uͤ</orig><reg>ü</reg></choice>berko<choice><orig>m̅</orig><reg>mm</reg></choice>t, <choice><orig>ſ</orig><reg>s</reg></choice>ie ne<choice><orig>n̄</orig><reg>nn</reg></choice>’ und ihrer gedenke?</l>
+          <l n="67">Stiegen dort die S<choice><orig>aͤ</orig><reg>ä</reg></choice>ulen empor und leuchteten dort nicht</l>
+          <l n="68">Son<choice><orig>ſ</orig><reg>s</reg></choice>t vom Dache der Burg herab die G<choice><orig>oͤ</orig><reg>ö</reg></choice>tterge<choice><orig>ſ</orig><reg>s</reg></choice>talten?</l>
+          <l n="69">Rau<choice><orig>ſ</orig><reg>s</reg></choice>chte dort die Sti<choice><orig>m̅</orig><reg>mm</reg></choice>e des Volks, die <choice><orig>ſ</orig><reg>s</reg></choice>t<choice><orig>uͤ</orig><reg>ü</reg></choice>rmi<choice><orig>ſ</orig><reg>s</reg></choice>chbewegte</l>
+          <l n="70">Aus der <placeName ref="#agora">Agora</placeName> nicht her, und eilten aus freudigen Pforten</l>
+          <l n="71">Dort die Ga<choice><orig>ſſ</orig><reg>ss</reg></choice>en dir nicht zu ge<choice><orig>ſ</orig><reg>s</reg></choice>eegnetem Hafen herunter?</l>
+          <l n="72">Siehe! da l<choice><orig>oͤ</orig><reg>ö</reg></choice>ste <choice><orig>ſ</orig><reg>s</reg></choice>ein Schiff der fernhin<choice><orig>ſ</orig><reg>s</reg></choice>i<choice><orig>n̄</orig><reg>nn</reg></choice>ende Kaufma<choice><orig>n̄</orig><reg>nn</reg></choice>,</l>
+          <l n="73">Froh, de<choice><orig>n̄</orig><reg>nn</reg></choice> es wehet’ auch ihm die befl<choice><orig>uͤ</orig><reg>ü</reg></choice>gelnde Luft und die G<choice><orig>oͤ</orig><reg>ö</reg></choice>tter</l>
+          <l n="74">Liebten <choice><orig>ſ</orig><reg>s</reg></choice>o, wie den Dichter, auch ihn, dieweil er die guten</l>
+          <l n="75">Gaaben der Erd’ ausglich und Fernes Nahem vereinte.</l>
+          <l n="76">Fern nach <placeName ref="#cypros">Cypros</placeName> ziehet er hin und ferne nach <placeName ref="#tyros">Tyros</placeName>,</l>
+          <l n="77">Strebt nach <placeName ref="#kolchis">Kolchis</placeName> hinauf und hinab zum alten <placeName ref="#aegyptos">Aegyptos</placeName>,</l>
+          <l n="78">Daß er Purpur und Wein und Korn und Vließe gewi<choice><orig>n̄</orig><reg>nn</reg></choice>e</l>
+          <l n="79">F<choice><orig>uͤ</orig><reg>ü</reg></choice>r die eigene Stadt, und <choice><orig>oͤ</orig><reg>ö</reg></choice>fters <choice><orig>uͤ</orig><reg>ü</reg></choice>ber des k<choice><orig>uͤ</orig><reg>ü</reg></choice>hnen</l>
+          <l n="80"><persName ref="#herkules">Herkules</persName> S<choice><orig>aͤ</orig><reg>ä</reg></choice>ulen hinaus, zu neuen <choice><orig>ſ</orig><reg>s</reg></choice>eeligen In<choice><orig>ſ</orig><reg>s</reg></choice>eln</l>
+          <l n="81">Tragen die Hoffnungen ihn und des Schiffes Fl<choice><orig>uͤ</orig><reg>ü</reg></choice>gel, inde<choice><orig>ſſ</orig><reg>ss</reg></choice>en</l>
+          <l n="82">Anders bewegt, am Ge<choice><orig>ſ</orig><reg>s</reg></choice>tade der Stadt ein ein<choice><orig>ſ</orig><reg>s</reg></choice>amer J<choice><orig>uͤ</orig><reg>ü</reg></choice>ngling</l>
+          <l n="83">Weilt und die Wooge belau<choice><orig>ſ</orig><reg>s</reg></choice>cht, und Großes ahndet der Ern<choice><orig>ſ</orig><reg>s</reg></choice>te,</l>
+          <l n="84">We<choice><orig>n̄</orig><reg>nn</reg></choice> er zu F<choice><orig>uͤ</orig><reg>ü</reg></choice>ßen <choice><orig>ſ</orig><reg>s</reg></choice>o des erder<choice><orig>ſ</orig><reg>s</reg></choice>ch<choice><orig>uͤ</orig><reg>ü</reg></choice>tternden Mei<choice><orig>ſ</orig><reg>s</reg></choice>ters</l>
+          <l n="85">Lau<choice><orig>ſ</orig><reg>s</reg></choice>chet und <choice><orig>ſ</orig><reg>s</reg></choice>izt, und nicht um<choice><orig>ſ</orig><reg>s</reg></choice>on<choice><orig>ſ</orig><reg>s</reg></choice>t erzog ihn der Meergott.</l>
+        </lg>
+        <lg>
+          <l n="86">De<choice><orig>n̄</orig><reg>nn</reg></choice> des Genius Feind, der vielgebietende <persName ref="#perse">Per<choice><orig>ſ</orig><reg>s</reg></choice>e</persName>,</l>
+          <l n="87">Jahrlang z<choice><orig>aͤ</orig><reg>ä</reg></choice>hlt’ er <choice><orig>ſ</orig><reg>s</reg></choice>ie <choice><orig>ſ</orig><reg>s</reg></choice>chon, der Waffen Menge, der Knechte, </l>
+          <l n="88">Spottend des <placeName ref="#griechenland">griechi<choice><orig>ſ</orig><reg>s</reg></choice>chen Lands</placeName> und <choice><orig>ſ</orig><reg>s</reg></choice>einer wenigen In<choice><orig>ſ</orig><reg>s</reg></choice>eln,</l>
+          <l n="89">Und <choice><orig>ſ</orig><reg>s</reg></choice>ie deuchten dem Herr<choice><orig>ſ</orig><reg>s</reg></choice>cher ein Spiel, und noch, wie ein Traum, war</l>
+          <l n="90">Ihm das i<choice><orig>n̄</orig><reg>nn</reg></choice>ige Volk, vom G<choice><orig>oͤ</orig><reg>ö</reg></choice>ttergei<choice><orig>ſ</orig><reg>s</reg></choice>te ger<choice><orig>uͤ</orig><reg>ü</reg></choice><choice><orig>ſ</orig><reg>s</reg></choice>tet.</l>
+          <l n="91">Leicht aus <choice><orig>ſ</orig><reg>s</reg></choice>pricht er das Wort und <choice><orig>ſ</orig><reg>s</reg></choice>chnell, wie der fla<choice><orig>m̅</orig><reg>mm</reg></choice>ende Bergquell,</l>
+          <l n="92">We<choice><orig>n̄</orig><reg>nn</reg></choice> er, furchtbar umher vom g<choice><orig>aͤ</orig><reg>ä</reg></choice>hrenden <placeName ref="#aetna">Aetna</placeName> gego<choice><orig>ſſ</orig><reg>ss</reg></choice>en,</l>
+          <l n="93">St<choice><orig>aͤ</orig><reg>ä</reg></choice>dte begr<choice><orig>aͤ</orig><reg>ä</reg></choice>bt in der purpurnen Fluth und bl<choice><orig>uͤ</orig><reg>ü</reg></choice>hende G<choice><orig>aͤ</orig><reg>ä</reg></choice>rten,</l>
+          <l n="94">Bis der bre<choice><orig>n̄</orig><reg>nn</reg></choice>ende Strom im heiligen Meere <choice><orig>ſ</orig><reg>s</reg></choice>ich k<choice><orig>uͤ</orig><reg>ü</reg></choice>hlet,</l>
+          <l n="95">So mit dem K<choice><orig>oͤ</orig><reg>ö</reg></choice>nige nun, ver<choice><orig>ſ</orig><reg>s</reg></choice>engend, <choice><orig>ſ</orig><reg>s</reg></choice>t<choice><orig>aͤ</orig><reg>ä</reg></choice>dteverw<choice><orig>uͤ</orig><reg>ü</reg></choice><choice><orig>ſ</orig><reg>s</reg></choice>tend,</l>
+          <l n="96">St<choice><orig>uͤ</orig><reg>ü</reg></choice>rzt von <placeName ref="#ekbatana">Ekbatana</placeName> daher <choice><orig>ſ</orig><reg>s</reg></choice>ein pr<choice><orig>aͤ</orig><reg>ä</reg></choice>chtig Get<choice><orig>uͤ</orig><reg>ü</reg></choice><choice><orig>m̅</orig><reg>mm</reg></choice>el;</l>
+          <l n="97">Weh! und <persName ref="#athene">Athene</persName>, die herrliche, f<choice><orig>aͤ</orig><reg>ä</reg></choice>llt; wohl <choice><orig>ſ</orig><reg>s</reg></choice>chauen und ringen</l>
+          <l n="98">Vom Gebirg, wo das Wild ihr Ge<choice><orig>ſ</orig><reg>s</reg></choice>chrei h<choice><orig>oͤ</orig><reg>ö</reg></choice>rt, fliehende Grei<choice><orig>ſ</orig><reg>s</reg></choice>e</l>
+          <l n="99">Nach den Wohnungen dort zur<choice><orig>uͤ</orig><reg>ü</reg></choice>k und den rauchenden Tempeln;</l>
+          <l n="100">Aber es wekt der S<choice><orig>oͤ</orig><reg>ö</reg></choice>hne Gebet die heilige A<choice><orig>ſ</orig><reg>s</reg></choice>che</l>
+          <l n="101">Nun nicht mehr, im Thal i<choice><orig>ſ</orig><reg>s</reg></choice>t der Tod, und die Wolke des Brandes</l>
+          <l n="102">Schwindet am Hi<choice><orig>m̅</orig><reg>mm</reg></choice>el dahin, und weiter im Lande zu erndten,</l>
+          <l n="103">Zieht, vom Frevel erhizt, mit der Beute der <persName ref="#perse">Per<choice><orig>ſ</orig><reg>s</reg></choice>e</persName> vor<choice><orig>uͤ</orig><reg>ü</reg></choice>ber.</l>
+        </lg>
+        <lg>
+          <l n="104">Aber an <placeName ref="#salamis">Salamis</placeName> Ufern, o Tag an <placeName ref="#salamis">Salamis</placeName> Ufern!</l>
+          <l n="105">Harrend des Endes <choice><orig>ſ</orig><reg>s</reg></choice>tehn die <persName ref="#athener_innen">Atheneri<choice><orig>n̄</orig><reg>nn</reg></choice>en</persName>, die Jungfraun,</l>
+          <l n="106">Stehn die M<choice><orig>uͤ</orig><reg>ü</reg></choice>tter, wiegend im Arm das gerettete S<choice><orig>oͤ</orig><reg>ö</reg></choice>hnlein,</l>
+          <l n="107">Aber den Horchenden <choice><orig>ſ</orig><reg>s</reg></choice>challt von Tiefen die Sti<choice><orig>m̅</orig><reg>mm</reg></choice>e des Meergotts</l>
+          <l n="108">Heilwei<choice><orig>ſſ</orig><reg>ss</reg></choice>agend herauf, es <choice><orig>ſ</orig><reg>s</reg></choice>chauen die G<choice><orig>oͤ</orig><reg>ö</reg></choice>tter des Hi<choice><orig>m̅</orig><reg>mm</reg></choice>els</l>
+          <l n="109">W<choice><orig>aͤ</orig><reg>ä</reg></choice>gend und richtend herab, de<choice><orig>n̄</orig><reg>nn</reg></choice> dort an den bebenden Ufern</l>
+          <l n="110">Wankt <choice><orig>ſ</orig><reg>s</reg></choice>eit Tagesbegi<choice><orig>n̄</orig><reg>nn</reg></choice>, wie lang<choice><orig>ſ</orig><reg>s</reg></choice>amwandelnd Gewitter,</l>
+          <l n="111">Dort auf <choice><orig>ſ</orig><reg>s</reg></choice>ch<choice><orig>aͤ</orig><reg>ä</reg></choice>umenden Wa<choice><orig>ſſ</orig><reg>ss</reg></choice>ern die Schlacht, und es gl<choice><orig>uͤ</orig><reg>ü</reg></choice>het der Mittag,</l>
+          <l n="112">Unbemerket im Zorn, <choice><orig>ſ</orig><reg>s</reg></choice>chon <choice><orig>uͤ</orig><reg>ü</reg></choice>ber dem Haupte den K<choice><orig>aͤ</orig><reg>ä</reg></choice>mpfern.</l>
+          <l n="113">Aber die M<choice><orig>aͤ</orig><reg>ä</reg></choice><choice><orig>n̄</orig><reg>nn</reg></choice>er des Volks, die Heroënenkel, <choice><orig>ſ</orig><reg>s</reg></choice>ie walten</l>
+          <l n="114">Helleren Auges jezt, die G<choice><orig>oͤ</orig><reg>ö</reg></choice>tterlieblinge denken</l>
+          <l n="115">Des be<choice><orig>ſ</orig><reg>s</reg></choice>chiedenen Gl<choice><orig>uͤ</orig><reg>ü</reg></choice>ks, es zahmen die Kinder <persName ref="#athene">Athene</persName>s</l>
+          <l n="116">Ihren Genius, ihn, den todverachtenden, jezt nicht.</l>
+          <l n="117">De<choice><orig>n̄</orig><reg>nn</reg></choice> wie aus rauchendem Blut das Wild der W<choice><orig>uͤ</orig><reg>ü</reg></choice><choice><orig>ſ</orig><reg>s</reg></choice>te noch einmal</l>
+          <l n="118">Sich zulezt verwandelt erhebt, der edleren Kraft gleich,</l>
+          <l n="119">Und den J<choice><orig>aͤ</orig><reg>ä</reg></choice>ger er<choice><orig>ſ</orig><reg>s</reg></choice>chrekt, kehrt jezt im Glanze der Waffen,</l>
+          <l n="120">Bei der Herr<choice><orig>ſ</orig><reg>s</reg></choice>cher Gebot, furchtbarge<choice><orig>ſ</orig><reg>s</reg></choice>a<choice><orig>m̅</orig><reg>mm</reg></choice>elt den Wilden,</l>
+          <l n="121">Mitten im Untergang, die ermattete Seele noch einmal.</l>
+          <l n="122">Und entbra<choice><orig>n̄</orig><reg>nn</reg></choice>ter begi<choice><orig>n̄</orig><reg>nn</reg></choice>ts; wie Paare ringender M<choice><orig>aͤ</orig><reg>ä</reg></choice><choice><orig>n̄</orig><reg>nn</reg></choice>er</l>
+          <l n="123">Fa<choice><orig>ſſ</orig><reg>ss</reg></choice>en die Schiffe <choice><orig>ſ</orig><reg>s</reg></choice>ich an, in die Wooge taumelt das Steuer,</l>
+          <l n="124">Unter den Streitern bricht der Boden, und Schiffer und Schiff <choice><orig>ſ</orig><reg>s</reg></choice>inkt.</l>
+        </lg>
+        <lg>
+          <l n="125">Aber in <choice><orig>ſ</orig><reg>s</reg></choice>chwindelnden Traum vom Liede des Tages ge<choice><orig>ſ</orig><reg>s</reg></choice>ungen,</l>
+          <l n="126">Rollt der K<choice><orig>oͤ</orig><reg>ö</reg></choice>nig den Blik; irrl<choice><orig>aͤ</orig><reg>ä</reg></choice>chelnd <choice><orig>uͤ</orig><reg>ü</reg></choice>ber den Ausgang</l>
+          <l n="127">Droht er, und fleht, und frohlokt, und <choice><orig>ſ</orig><reg>s</reg></choice>endet, wie Blitze, die Boten.</l>
+          <l n="128">Doch er <choice><orig>ſ</orig><reg>s</reg></choice>endet um<choice><orig>ſ</orig><reg>s</reg></choice>on<choice><orig>ſ</orig><reg>s</reg></choice>t, es kehret keiner ihm wieder.</l>
+          <l n="129">Blutige Boten, Er<choice><orig>ſ</orig><reg>s</reg></choice>chlagne des Heers, und ber<choice><orig>ſ</orig><reg>s</reg></choice>tende Schiffe,</l>
+          <l n="130">Wirft die R<choice><orig>aͤ</orig><reg>ä</reg></choice>cherin ihm zahllos, die do<choice><orig>n̄</orig><reg>nn</reg></choice>ernde Wooge,</l>
+          <l n="131">Vor den Thron, wo er <choice><orig>ſ</orig><reg>s</reg></choice>izt am bebenden Ufer, der Arme,</l>
+          <l n="132">Schauend die Flucht, und fort in die fliehende Menge geri<choice><orig>ſſ</orig><reg>ss</reg></choice>en,</l>
+          <l n="133">Eilt er, ihn treibt der Gott, es treibt <choice><orig>ſ</orig><reg>s</reg></choice>ein irrend Ge<choice><orig>ſ</orig><reg>s</reg></choice>chwader</l>
+          <l n="134"><choice><orig>uͤ</orig><reg>ü</reg></choice>ber die Fluthen der Gott, der <choice><orig>ſ</orig><reg>s</reg></choice>pottend <choice><orig>ſ</orig><reg>s</reg></choice>ein eitel Ge<choice><orig>ſ</orig><reg>s</reg></choice>chmeid ihm</l>
+          <l n="135">Endlich zer<choice><orig>ſ</orig><reg>s</reg></choice>chlug und den Schwachen erreicht’ in der drohenden R<choice><orig>uͤ</orig><reg>ü</reg></choice><choice><orig>ſ</orig><reg>s</reg></choice>tung.</l>
+        </lg>
+        <lg>
+          <l n="136">Aber liebend zur<choice><orig>uͤ</orig><reg>ü</reg></choice>ck zum ein<choice><orig>ſ</orig><reg>s</reg></choice>amharrenden Strome</l>
+          <l n="137">Ko<choice><orig>m̅</orig><reg>mm</reg></choice>t der <persName ref="#athener_innen">Athener</persName> Volk und von den Bergen der Heimath</l>
+          <l n="138">Woogen, freudig gemi<choice><orig>ſ</orig><reg>s</reg></choice>cht, die gl<choice><orig>aͤ</orig><reg>ä</reg></choice>nzenden Schaaren herunter</l>
+          <l n="139">Ins verla<choice><orig>ſſ</orig><reg>ss</reg></choice>ene Thal, ach! gleich der gealterten Mutter,</l>
+          <l n="140">We<choice><orig>n̄</orig><reg>nn</reg></choice> nach Jahren das Kind, das verlorengeachtete, wieder</l>
+          <l n="141">Lebend ihr an die Br<choice><orig>uͤ</orig><reg>ü</reg></choice><choice><orig>ſ</orig><reg>s</reg></choice>te kehrt, ein erwach<choice><orig>ſ</orig><reg>s</reg></choice>ener J<choice><orig>uͤ</orig><reg>ü</reg></choice>ngling,</l>
+          <l n="142">Aber im Gram i<choice><orig>ſ</orig><reg>s</reg></choice>t ihr die Seele gewelkt und die Freude</l>
+          <l n="143">Ko<choice><orig>m̅</orig><reg>mm</reg></choice>t der hoffnungsm<choice><orig>uͤ</orig><reg>ü</reg></choice>den zu <choice><orig>ſ</orig><reg>s</reg></choice>p<choice><orig>aͤ</orig><reg>ä</reg></choice>t und m<choice><orig>uͤ</orig><reg>ü</reg></choice>h<choice><orig>ſ</orig><reg>s</reg></choice>am verni<choice><orig>m̅</orig><reg>mm</reg></choice>t <choice><orig>ſ</orig><reg>s</reg></choice>ie,</l>
+          <l n="144">Was der liebende Sohn in <choice><orig>ſ</orig><reg>s</reg></choice>einem Danke geredet;</l>
+          <l n="145">So er<choice><orig>ſ</orig><reg>s</reg></choice>cheint den Ko<choice><orig>m̅</orig><reg>mm</reg></choice>enden dort der Boden der Heimath.</l>
+          <l n="146">De<choice><orig>n̄</orig><reg>nn</reg></choice> es fragen um<choice><orig>ſ</orig><reg>s</reg></choice>on<choice><orig>ſ</orig><reg>s</reg></choice>t nach ihren Hainen die Fro<choice><orig>m̅</orig><reg>mm</reg></choice>en,</l>
+          <l n="147">Und die Sieger empf<choice><orig>aͤ</orig><reg>ä</reg></choice>ngt die freundliche Pforte nicht wieder,</l>
+          <l n="148">Wie den Wanderer <choice><orig>ſ</orig><reg>s</reg></choice>on<choice><orig>ſ</orig><reg>s</reg></choice>t <choice><orig>ſ</orig><reg>s</reg></choice>ie empfieng, we<choice><orig>n̄</orig><reg>nn</reg></choice> er froh von den In<choice><orig>ſ</orig><reg>s</reg></choice>eln</l>
+          <l n="149">Wiederkehrt’ und die <choice><orig>ſ</orig><reg>s</reg></choice>eelige Burg der Mutter <persName ref="#athene">Athene</persName></l>
+          <l n="150"><choice><orig>uͤ</orig><reg>ü</reg></choice>ber <choice><orig>ſ</orig><reg>s</reg></choice>ehnendem Haupt ihm fernhergl<choice><orig>aͤ</orig><reg>ä</reg></choice>nzend heraufgieng.</l>
+          <l n="151">Aber wohl <choice><orig>ſ</orig><reg>s</reg></choice>ind ihnen beka<choice><orig>n̄</orig><reg>nn</reg></choice>t die ver<choice><orig>oͤ</orig><reg>ö</reg></choice>deten Ga<choice><orig>ſſ</orig><reg>ss</reg></choice>en</l>
+          <l n="152">Und die trauernden G<choice><orig>aͤ</orig><reg>ä</reg></choice>rten umher und auf der <placeName ref="#agora">Agora</placeName>,</l>
+          <l n="153">Wo des Portikus S<choice><orig>aͤ</orig><reg>ä</reg></choice>ulen ge<choice><orig>ſ</orig><reg>s</reg></choice>t<choice><orig>uͤ</orig><reg>ü</reg></choice>rzt und die g<choice><orig>oͤ</orig><reg>ö</reg></choice>ttlichen Bilder</l>
+          <l n="154">Liegen, da reicht in der Seele bewegt, und der Treue <choice><orig>ſ</orig><reg>s</reg></choice>ich freuend,</l>
+          <l n="155">Jezt das liebende Volk zum Bunde die H<choice><orig>aͤ</orig><reg>ä</reg></choice>nde <choice><orig>ſ</orig><reg>s</reg></choice>ich wieder.</l>
+          <l n="156">Bald auch <choice><orig>ſ</orig><reg>s</reg></choice>uchet und <choice><orig>ſ</orig><reg>s</reg></choice>ieht den Ort des eigenen Haußes</l>
+          <l n="157">Unter dem Schutt der Ma<choice><orig>n̄</orig><reg>nn</reg></choice>; ihm weint am Hal<choice><orig>ſ</orig><reg>s</reg></choice>e, der trauten</l>
+          <l n="158">Schlu<choice><orig>m̅</orig><reg>mm</reg></choice>er<choice><orig>ſ</orig><reg>s</reg></choice>t<choice><orig>aͤ</orig><reg>ä</reg></choice>te gedenk, <choice><orig>ſ</orig><reg>s</reg></choice>ein Weib, es fragen die Kindlein</l>
+          <l n="159">Nach dem Ti<choice><orig>ſ</orig><reg>s</reg></choice>che, wo <choice><orig>ſ</orig><reg>s</reg></choice>on<choice><orig>ſ</orig><reg>s</reg></choice>t in lieblicher Reihe <choice><orig>ſ</orig><reg>s</reg></choice>ie <choice><orig>ſ</orig><reg>s</reg></choice>aßen,</l>
+          <l n="160">Von den V<choice><orig>aͤ</orig><reg>ä</reg></choice>tern ge<choice><orig>ſ</orig><reg>s</reg></choice>ehn, den l<choice><orig>aͤ</orig><reg>ä</reg></choice>chelnden G<choice><orig>oͤ</orig><reg>ö</reg></choice>ttern des Haußes.</l>
+          <l n="161">Aber Gezelte bauet das Volk, es <choice><orig>ſ</orig><reg>s</reg></choice>chließen die alten</l>
+          <l n="162">Nachbarn wieder <choice><orig>ſ</orig><reg>s</reg></choice>ich an, und nach des Herzens Gewohnheit</l>
+          <l n="163">Ordnen die luftigen Wohnungen <choice><orig>ſ</orig><reg>s</reg></choice>ich umher an den H<choice><orig>uͤ</orig><reg>ü</reg></choice>geln.</l>
+          <l n="164">So inde<choice><orig>ſſ</orig><reg>ss</reg></choice>en wohnen <choice><orig>ſ</orig><reg>s</reg></choice>ie nun, wie die Freien, die Alten,</l>
+          <l n="165">Die, der St<choice><orig>aͤ</orig><reg>ä</reg></choice>rke gewiß und dem ko<choice><orig>m̅</orig><reg>mm</reg></choice>enden Tage vertrauend,</l>
+          <l n="166">Wandernden V<choice><orig>oͤ</orig><reg>ö</reg></choice>geln gleich, mit Ge<choice><orig>ſ</orig><reg>s</reg></choice>ange von Berge zu Berg’ ein<choice><orig>ſ</orig><reg>s</reg></choice>t</l>
+          <l n="167">Zogen, die F<choice><orig>uͤ</orig><reg>ü</reg></choice>r<choice><orig>ſ</orig><reg>s</reg></choice>ten des For<choice><orig>ſ</orig><reg>s</reg></choice>ts und des weitumirrenden Stromes.</l>
+          <l n="168">Doch umf<choice><orig>aͤ</orig><reg>ä</reg></choice>ngt noch, wie <choice><orig>ſ</orig><reg>s</reg></choice>on<choice><orig>ſ</orig><reg>s</reg></choice>t, die Muttererde, die treue,</l>
+          <l n="169">Wieder ihr edel Volk, und unter heiligem Hi<choice><orig>m̅</orig><reg>mm</reg></choice>el</l>
+          <l n="170">Ruhen <choice><orig>ſ</orig><reg>s</reg></choice>ie <choice><orig>ſ</orig><reg>s</reg></choice>anft, we<choice><orig>n̄</orig><reg>nn</reg></choice> milde, wie <choice><orig>ſ</orig><reg>s</reg></choice>on<choice><orig>ſ</orig><reg>s</reg></choice>t, die L<choice><orig>uͤ</orig><reg>ü</reg></choice>fte der Jugend</l>
+          <l n="171">Um die Schlafenden wehn, und aus Platanen <placeName ref="#ilissus">Ili<choice><orig>ſſ</orig><reg>ss</reg></choice>us</placeName></l>
+          <l n="172">Ihnen her<choice><orig>uͤ</orig><reg>ü</reg></choice>berrau<choice><orig>ſ</orig><reg>s</reg></choice>cht, und neue Tage verk<choice><orig>uͤ</orig><reg>ü</reg></choice>ndend,</l>
+          <l n="173">Lokend zu neuen Thaten, bei Nacht die Wooge des Meergotts</l>
+          <l n="174">Fernher t<choice><orig>oͤ</orig><reg>ö</reg></choice>nt und fr<choice><orig>oͤ</orig><reg>ö</reg></choice>hliche Tr<choice><orig>aͤ</orig><reg>ä</reg></choice>ume den Lieblingen <choice><orig>ſ</orig><reg>s</reg></choice>endet.</l>
+          <l n="175">Schon auch <choice><orig>ſ</orig><reg>s</reg></choice>pro<choice><orig>ſſ</orig><reg>ss</reg></choice>en und bl<choice><orig>uͤ</orig><reg>ü</reg></choice>hn die Blumen m<choice><orig>aͤ</orig><reg>ä</reg></choice>lig, die goldnen,</l>
+          <l n="176">Auf zertretenem Feld, von fro<choice><orig>m̅</orig><reg>mm</reg></choice>en H<choice><orig>aͤ</orig><reg>ä</reg></choice>nden gewartet,</l>
+          <l n="177">Gr<choice><orig>uͤ</orig><reg>ü</reg></choice>net der <choice><orig>oͤ</orig><reg>ö</reg></choice>lbaum auf, und auf <placeName ref="#kolonos">Kolonos</placeName> Gefilden</l>
+          <l n="178">N<choice><orig>aͤ</orig><reg>ä</reg></choice>hren friedlich, wie <choice><orig>ſ</orig><reg>s</reg></choice>on<choice><orig>ſ</orig><reg>s</reg></choice>t, die <placeName ref="#athen">Athen</placeName>i<choice><orig>ſ</orig><reg>s</reg></choice>chen Ro<choice><orig>ſſ</orig><reg>ss</reg></choice>e <choice><orig>ſ</orig><reg>s</reg></choice>ich wieder.</l>
+        </lg>
+        <lg>
+          <l n="179">Aber der Muttererd’ und dem Gott der Wooge zu Ehren</l>
+          <l n="180">Bl<choice><orig>uͤ</orig><reg>ü</reg></choice>het die Stadt izt auf, ein herrlich Gebild, dem Ge<choice><orig>ſ</orig><reg>s</reg></choice>tirn gleich</l>
+          <l n="181">Sichergegr<choice><orig>uͤ</orig><reg>ü</reg></choice>ndet, des Genius Werk, de<choice><orig>n̄</orig><reg>nn</reg></choice> Fe<choice><orig>ſſ</orig><reg>ss</reg></choice>eln der Liebe</l>
+          <l n="182">Schafft er gerne <choice><orig>ſ</orig><reg>s</reg></choice>ich <choice><orig>ſ</orig><reg>s</reg></choice>o, <choice><orig>ſ</orig><reg>s</reg></choice>o h<choice><orig>aͤ</orig><reg>ä</reg></choice>lt in großen Ge<choice><orig>ſ</orig><reg>s</reg></choice>talten,</l>
+          <l n="183">Die er <choice><orig>ſ</orig><reg>s</reg></choice>elbst <choice><orig>ſ</orig><reg>s</reg></choice>ich erbaut, der i<choice><orig>m̅</orig><reg>mm</reg></choice>errege <choice><orig>ſ</orig><reg>s</reg></choice>ich bleibend.</l>
+          <l n="184">Sieh! und dem Schaffenden dienet der Wald, ihm reicht mit den andern</l>
+          <l n="185">Bergen nahe zur Hand der <placeName ref="#pentele">Pentele</placeName> Marmor und Erze,</l>
+          <l n="186">Aber lebend, wie er, und froh und herrlich entquillt es</l>
+          <l n="187">Seinen H<choice><orig>aͤ</orig><reg>ä</reg></choice>nden, und leicht, wie der So<choice><orig>n̄</orig><reg>nn</reg></choice>e, gedeiht das Ge<choice><orig>ſ</orig><reg>s</reg></choice>ch<choice><orig>aͤ</orig><reg>ä</reg></choice>fft ihm.</l>
+          <l n="188">Bru<choice><orig>n̄</orig><reg>nn</reg></choice>en <choice><orig>ſ</orig><reg>s</reg></choice>teigen empor und <choice><orig>uͤ</orig><reg>ü</reg></choice>ber die H<choice><orig>uͤ</orig><reg>ü</reg></choice>gel in reinen</l>
+          <l n="189">Bahnen gelenkt, ereilt der Quell das gl<choice><orig>aͤ</orig><reg>ä</reg></choice>nzende Beken;</l>
+          <l n="190">Und umher an ihnen ergl<choice><orig>aͤ</orig><reg>ä</reg></choice>nzt, gleich fe<choice><orig>ſ</orig><reg>s</reg></choice>tlichen Helden</l>
+          <l n="191">Am gemein<choice><orig>ſ</orig><reg>s</reg></choice>amen Kelch, die Reihe der Wohnungen, hoch ragt</l>
+          <l n="192">Der <persName ref="#prytanen">Prytanen</persName> Gemach, es <choice><orig>ſ</orig><reg>s</reg></choice>tehn <placeName ref="#gymnasien">Gymna<choice><orig>ſ</orig><reg>s</reg></choice>ien</placeName> offen,</l>
+          <l n="193">G<choice><orig>oͤ</orig><reg>ö</reg></choice>ttertempel ent<choice><orig>ſ</orig><reg>s</reg></choice>tehn, ein heiligk<choice><orig>uͤ</orig><reg>ü</reg></choice>hner Gedanke</l>
+          <l n="194">Steigt, Un<choice><orig>ſ</orig><reg>s</reg></choice>terblichen nah, das <placeName ref="#olympion">Olympion</placeName> auf in den <placeName ref="#aether">Aether</placeName></l>
+          <l n="195">Aus dem <choice><orig>ſ</orig><reg>s</reg></choice>eeligen Hain; noch manche der hi<choice><orig>m̅</orig><reg>mm</reg></choice>li<choice><orig>ſ</orig><reg>s</reg></choice>chen Hallen!</l>
+          <l n="196">Mutter <persName ref="#athene">Athene</persName>, dir auch, dir wuchs dein herrlicher H<choice><orig>uͤ</orig><reg>ü</reg></choice>gel</l>
+          <l n="197">Stolzer aus der Trauer empor und bl<choice><orig>uͤ</orig><reg>ü</reg></choice>hte noch lange,</l>
+          <l n="198">Gott der Woogen und dir, und deine Lieblinge <choice><orig>ſ</orig><reg>s</reg></choice>angen</l>
+          <l n="199">Frohver<choice><orig>ſ</orig><reg>s</reg></choice>a<choice><orig>m̅</orig><reg>mm</reg></choice>elt noch oft am Vorgebirge den Dank dir.</l>
+        </lg>
+        <lg>
+          <l n="200">O die Kinder des Gl<choice><orig>uͤ</orig><reg>ü</reg></choice>ks, die fro<choice><orig>m̅</orig><reg>mm</reg></choice>en! wandeln <choice><orig>ſ</orig><reg>s</reg></choice>ie fern nun</l>
+          <l n="201">Bei den V<choice><orig>aͤ</orig><reg>ä</reg></choice>tern daheim, und der Schik<choice><orig>ſ</orig><reg>s</reg></choice>aalstage verge<choice><orig>ſſ</orig><reg>ss</reg></choice>en,</l>
+          <l n="202">Dr<choice><orig>uͤ</orig><reg>ü</reg></choice>ben am <placeName ref="#lethe">Lethe</placeName><choice><orig>ſ</orig><reg>s</reg></choice>trom, und bringt kein Sehnen <choice><orig>ſ</orig><reg>s</reg></choice>ie wieder?</l>
+          <l n="203">Sieht mein Auge <choice><orig>ſ</orig><reg>s</reg></choice>ie nie? ach! findet <choice><orig>uͤ</orig><reg>ü</reg></choice>ber den tau<choice><orig>ſ</orig><reg>s</reg></choice>end</l>
+          <l n="204">Pfaden der gr<choice><orig>uͤ</orig><reg>ü</reg></choice>nenden Erd’, ihr g<choice><orig>oͤ</orig><reg>ö</reg></choice>ttergleichen Ge<choice><orig>ſ</orig><reg>s</reg></choice>talten!</l>
+          <l n="205">Euch das <choice><orig>ſ</orig><reg>s</reg></choice>uchende nie, und vernahm ich darum die Sprache,</l>
+          <l n="206">Darum die Sage von euch, daß i<choice><orig>m̅</orig><reg>mm</reg></choice>ertrauernd die Seele</l>
+          <l n="207">Vor der Zeit mir hinab zu euern Schatten entfliehe?</l>
+          <l n="208">Aber n<choice><orig>aͤ</orig><reg>ä</reg></choice>her zu euch, wo eure Haine noch wach<choice><orig>ſ</orig><reg>s</reg></choice>en,</l>
+          <l n="209">Wo <choice><orig>ſ</orig><reg>s</reg></choice>ein ein<choice><orig>ſ</orig><reg>s</reg></choice>ames Haupt in Wolken der heilige Berg h<choice><orig>uͤ</orig><reg>ü</reg></choice>llt,</l>
+          <l n="210">Zum <placeName ref="#parnassos">Parna<choice><orig>ſſ</orig><reg>ss</reg></choice>os</placeName> will ich, und we<choice><orig>n̄</orig><reg>nn</reg></choice> im Dunkel der Eiche</l>
+          <l n="211">Schi<choice><orig>m̅</orig><reg>mm</reg></choice>ernd, mir Irrenden dort <placeName ref="#kastalia">Ka<choice><orig>ſ</orig><reg>s</reg></choice>talia</placeName>s Quelle begegnet,</l>
+          <l n="212">Will ich, mit Thr<choice><orig>aͤ</orig><reg>ä</reg></choice>nen gemi<choice><orig>ſ</orig><reg>s</reg></choice>cht, aus bl<choice><orig>uͤ</orig><reg>ü</reg></choice>thenumdufteter Schaale</l>
+          <l n="213">Dort, auf keimendes Gr<choice><orig>uͤ</orig><reg>ü</reg></choice>n, das Wa<choice><orig>ſſ</orig><reg>ss</reg></choice>er gießen, damit doch,</l>
+          <l n="214">O ihr Schlafenden all! ein Todtenopfer euch werde.</l>
+          <l n="215">Dort im <choice><orig>ſ</orig><reg>s</reg></choice>chweigenden Thal, an <placeName ref="#tempe">Tempes</placeName> hangenden Fel<choice><orig>ſ</orig><reg>s</reg></choice>en,</l>
+          <l n="216">Will ich wohnen mit euch, dort oft, ihr herrlichen Nahmen!</l>
+          <l n="217">Her euch rufen bei Nacht, und we<choice><orig>n̄</orig><reg>nn</reg></choice> ihr z<choice><orig>uͤ</orig><reg>ü</reg></choice>rnend er<choice><orig>ſ</orig><reg>s</reg></choice>cheinet,</l>
+          <l n="218">Weil der Pflug die Gr<choice><orig>aͤ</orig><reg>ä</reg></choice>ber entweiht, mit der Sti<choice><orig>m̅</orig><reg>mm</reg></choice>e des Herzens</l>
+          <l n="219">Will ich, mit fro<choice><orig>m̅</orig><reg>mm</reg></choice>em Ge<choice><orig>ſ</orig><reg>s</reg></choice>ang euch <choice><orig>ſ</orig><reg>s</reg></choice><choice><orig>uͤ</orig><reg>ü</reg></choice>hnen, heilige Schatten!</l>
+          <l n="220">Bis zu leben mit euch, <choice><orig>ſ</orig><reg>s</reg></choice>ich ganz die Seele gew<choice><orig>oͤ</orig><reg>ö</reg></choice>hnet.</l>
+          <l n="221">Fragen wird der Geweihtere da<choice><orig>n̄</orig><reg>nn</reg></choice> euch manches, ihr Todten!</l>
+          <l n="222">Euch, ihr Lebenden auch, ihr hohen Kr<choice><orig>aͤ</orig><reg>ä</reg></choice>fte des Hi<choice><orig>m̅</orig><reg>mm</reg></choice>els,</l>
+          <l n="223">We<choice><orig>n̄</orig><reg>nn</reg></choice> ihr <choice><orig>uͤ</orig><reg>ü</reg></choice>ber dem Schutt mit euren Jahren vorbeigeht,</l>
+          <l n="224">Ihr in der <choice><orig>ſ</orig><reg>s</reg></choice>icheren Bahn! de<choice><orig>n̄</orig><reg>nn</reg></choice> oft ergreiffet das Irr<choice><orig>ſ</orig><reg>s</reg></choice>aal</l>
+          <l n="225">Unter den Sternen mir, wie <choice><orig>ſ</orig><reg>s</reg></choice>chaurige L<choice><orig>uͤ</orig><reg>ü</reg></choice>fte, den Bu<choice><orig>ſ</orig><reg>s</reg></choice>en,</l>
+          <l n="226">Daß ich <choice><orig>ſ</orig><reg>s</reg></choice>p<choice><orig>aͤ</orig><reg>ä</reg></choice>he nach Rath, und lang <choice><orig>ſ</orig><reg>s</reg></choice>chon reden <choice><orig>ſ</orig><reg>s</reg></choice>ie ni<choice><orig>m̅</orig><reg>mm</reg></choice>er</l>
+          <l n="227">Tro<choice><orig>ſ</orig><reg>s</reg></choice>t den Bed<choice><orig>uͤ</orig><reg>ü</reg></choice>rftigen zu, die propheti<choice><orig>ſ</orig><reg>s</reg></choice>chen Haine <placeName ref="#dodona">Dodona</placeName>s,</l>
+          <l n="228">Stu<choice><orig>m̅</orig><reg>mm</reg></choice> i<choice><orig>ſ</orig><reg>s</reg></choice>t der <placeName ref="#delphi">delphi</placeName><choice><orig>ſ</orig><reg>s</reg></choice>che Gott, und ein<choice><orig>ſ</orig><reg>s</reg></choice>am liegen und <choice><orig>oͤ</orig><reg>ö</reg></choice>de</l>
+          <l n="229">L<choice><orig>aͤ</orig><reg>ä</reg></choice>ng<choice><orig>ſ</orig><reg>s</reg></choice>t die Pfade, wo ein<choice><orig>ſ</orig><reg>s</reg></choice>t, von Hoffnungen lei<choice><orig>ſ</orig><reg>s</reg></choice>e geleitet,</l>
+          <l n="230">Fragend der Ma<choice><orig>n̄</orig><reg>nn</reg></choice> zur Stadt des redlichen Sehers herauf<choice><orig>ſ</orig><reg>s</reg></choice>tieg.</l>
+          <l n="231">Aber droben das Licht, es <choice><orig>ſ</orig><reg>s</reg></choice>pricht noch heute zu Men<choice><orig>ſ</orig><reg>s</reg></choice>chen,</l>
+          <l n="232">Sch<choice><orig>oͤ</orig><reg>ö</reg></choice>ner Deutungen voll und des großen Do<choice><orig>n̄</orig><reg>nn</reg></choice>erers Sti<choice><orig>m̅</orig><reg>mm</reg></choice>e</l>
+          <l n="233">Ruft es: Denket ihr mein? und die trauernde Wooge des Meergotts</l>
+          <l n="234">Hallt es wider: Gedenkt ihr ni<choice><orig>m̅</orig><reg>mm</reg></choice>er meiner, wie vormals?</l>
+          <l n="235">De<choice><orig>n̄</orig><reg>nn</reg></choice> es ruhn die Hi<choice><orig>m̅</orig><reg>mm</reg></choice>li<choice><orig>ſ</orig><reg>s</reg></choice>chen gern am f<choice><orig>uͤ</orig><reg>ü</reg></choice>hlenden Herzen;</l>
+          <l n="236">I<choice><orig>m̅</orig><reg>mm</reg></choice>er, wie <choice><orig>ſ</orig><reg>s</reg></choice>on<choice><orig>ſ</orig><reg>s</reg></choice>t, geleiten <choice><orig>ſ</orig><reg>s</reg></choice>ie noch, die begei<choice><orig>ſ</orig><reg>s</reg></choice>ternden Kr<choice><orig>aͤ</orig><reg>ä</reg></choice>fte,</l>
+          <l n="237">Gerne den <choice><orig>ſ</orig><reg>s</reg></choice>trebenden Ma<choice><orig>n̄</orig><reg>nn</reg></choice> und <choice><orig>uͤ</orig><reg>ü</reg></choice>ber Bergen der Heimath</l>
+          <l n="238">Ruht und waltet und lebt allgegenw<choice><orig>aͤ</orig><reg>ä</reg></choice>rtig der <placeName ref="#aether">Aether</placeName>,</l>
+          <l n="239">Daß ein liebendes Volk in des Vaters Armen  ge<choice><orig>ſ</orig><reg>s</reg></choice>a<choice><orig>m̅</orig><reg>mm</reg></choice>elt,</l>
+          <l n="240">Menschlich freudig, wie <choice><orig>ſ</orig><reg>s</reg></choice>on<choice><orig>ſ</orig><reg>s</reg></choice>t, und Ein Gei<choice><orig>ſ</orig><reg>s</reg></choice>t allen gemein <choice><orig>ſ</orig><reg>s</reg></choice>ei.</l>
+          <l n="241">Aber weh! es wandelt in Nacht, es wohnt, wie im <placeName ref="#orkus">Orkus</placeName>,</l>
+          <l n="242">Ohne G<choice><orig>oͤ</orig><reg>ö</reg></choice>ttliches unser Ge<choice><orig>ſ</orig><reg>s</reg></choice>chlecht. Ans eigene Treiben</l>
+          <l n="243">Sind <choice><orig>ſ</orig><reg>s</reg></choice>ie ge<choice><orig>ſ</orig><reg>s</reg></choice>chmiedet allein, und <choice><orig>ſ</orig><reg>s</reg></choice>ich in der to<choice><orig>ſ</orig><reg>s</reg></choice>enden Werk<choice><orig>ſ</orig><reg>s</reg></choice>tatt</l>
+          <l n="244">H<choice><orig>oͤ</orig><reg>ö</reg></choice>ret jeglicher nur und viel arbeiten die Wilden</l>
+          <l n="245">Mit gewaltigem Arm, ra<choice><orig>ſ</orig><reg>s</reg></choice>tlos, doch i<choice><orig>m̅</orig><reg>mm</reg></choice>er und i<choice><orig>m̅</orig><reg>mm</reg></choice>er</l>
+          <l n="246">Unfruchtbar, wie die <persName ref="#furien">Furien</persName>, bleibt die M<choice><orig>uͤ</orig><reg>ü</reg></choice>he der Armen.</l>
+          <l n="247">Bis, erwacht vom <choice><orig>aͤ</orig><reg>ä</reg></choice>ng<choice><orig>ſ</orig><reg>s</reg></choice>tigen Traum, die Seele den Men<choice><orig>ſ</orig><reg>s</reg></choice>chen</l>
+          <l n="248">Aufgeht, jugendlich froh, und der Liebe <choice><orig>ſ</orig><reg>s</reg></choice>eegnender Othem</l>
+          <l n="249">Wieder, wie vormals oft, bei <placeName ref="#griechenland">Hellas</placeName> bl<choice><orig>uͤ</orig><reg>ü</reg></choice>henden Kindern,</l>
+          <l n="250">Wehet in neuer Zeit und <choice><orig>uͤ</orig><reg>ü</reg></choice>ber freierer Stirne</l>
+          <l n="251">Uns der Gei<choice><orig>ſ</orig><reg>s</reg></choice>t der Natur, der fernherwandelnde, wieder</l>
+          <l n="252">Stilleweilend der Gott in goldnen Wolken er<choice><orig>ſ</orig><reg>s</reg></choice>cheinet.</l>
+          <l n="253">Ach! und <choice><orig>ſ</orig><reg>s</reg></choice><choice><orig>aͤ</orig><reg>ä</reg></choice>ume<choice><orig>ſ</orig><reg>s</reg></choice>t du noch? und jene, die G<choice><orig>oͤ</orig><reg>ö</reg></choice>ttlichgebornen,</l>
+          <l n="254">Wohnen i<choice><orig>m̅</orig><reg>mm</reg></choice>er, o Tag! noch als in Tiefen der Erde</l>
+          <l n="255">Ein<choice><orig>ſ</orig><reg>s</reg></choice>am unten, indeß ein i<choice><orig>m̅</orig><reg>mm</reg></choice>erlebender Fr<choice><orig>uͤ</orig><reg>ü</reg></choice>hling</l>
+          <l n="256">Unbe<choice><orig>ſ</orig><reg>s</reg></choice>ungen <choice><orig>uͤ</orig><reg>ü</reg></choice>ber dem Haupt den Schlafenden d<choice><orig>aͤ</orig><reg>ä</reg></choice><choice><orig>m̅</orig><reg>mm</reg></choice>ert?</l>
+          <l n="257">Aber l<choice><orig>aͤ</orig><reg>ä</reg></choice>nger nicht mehr! <choice><orig>ſ</orig><reg>s</reg></choice>chon h<choice><orig>oͤ</orig><reg>ö</reg></choice>r’ ich ferne des Fe<choice><orig>ſ</orig><reg>s</reg></choice>ttags</l>
+          <l n="258">Chorge<choice><orig>ſ</orig><reg>s</reg></choice>ang auf gr<choice><orig>uͤ</orig><reg>ü</reg></choice>nem Gebirg’ und das Echo der Haine,</l>
+          <l n="259">Wo der J<choice><orig>uͤ</orig><reg>ü</reg></choice>nglinge Bru<choice><orig>ſ</orig><reg>s</reg></choice>t <choice><orig>ſ</orig><reg>s</reg></choice>ich hebt, wo die Seele des Volks <choice><orig>ſ</orig><reg>s</reg></choice>ich</l>
+          <l n="260">Stillvereint im freieren Lied, zur Ehre des Gottes,</l>
+          <l n="261">Dem die H<choice><orig>oͤ</orig><reg>ö</reg></choice>he geb<choice><orig>uͤ</orig><reg>ü</reg></choice>hrt, doch auch die Thale <choice><orig>ſ</orig><reg>s</reg></choice>ind heilig;</l>
+          <l n="262">De<choice><orig>n̄</orig><reg>nn</reg></choice>, wo fr<choice><orig>oͤ</orig><reg>ö</reg></choice>hlich der Strom in wach<choice><orig>ſ</orig><reg>s</reg></choice>ender Jugend hinauseilt,</l>
+          <l n="263">Unter Blumen des Lands, und wo auf <choice><orig>ſ</orig><reg>s</reg></choice>o<choice><orig>n̄</orig><reg>nn</reg></choice>igen Ebnen</l>
+          <l n="264">Edles Korn und der Ob<choice><orig>ſ</orig><reg>s</reg></choice>twald reift, da kr<choice><orig>aͤ</orig><reg>ä</reg></choice>nzen am Fe<choice><orig>ſ</orig><reg>s</reg></choice>te</l>
+          <l n="265">Gerne die Fro<choice><orig>m̅</orig><reg>mm</reg></choice>en <choice><orig>ſ</orig><reg>s</reg></choice>ich auch, und auf dem H<choice><orig>uͤ</orig><reg>ü</reg></choice>gel der Stadt gl<choice><orig>aͤ</orig><reg>ä</reg></choice>nzt,</l>
+          <l n="266">Men<choice><orig>ſ</orig><reg>s</reg></choice>chlicher Wohnung gleich, die hi<choice><orig>m̅</orig><reg>mm</reg></choice>li<choice><orig>ſ</orig><reg>s</reg></choice>che Halle der Freude.</l>
+          <l n="267">De<choice><orig>n̄</orig><reg>nn</reg></choice> voll g<choice><orig>oͤ</orig><reg>ö</reg></choice>ttlichen Si<choice><orig>n̄</orig><reg>nn</reg></choice>s i<choice><orig>ſ</orig><reg>s</reg></choice>t alles Leben geworden,</l>
+          <l n="268">Und vollendend, wie <choice><orig>ſ</orig><reg>s</reg></choice>on<choice><orig>ſ</orig><reg>s</reg></choice>t, er<choice><orig>ſ</orig><reg>s</reg></choice>chein<choice><orig>ſ</orig><reg>s</reg></choice>t du wieder den Kindern</l>
+          <l n="269"><choice><orig>uͤ</orig><reg>ü</reg></choice>berall, o Natur! und, wie vom Quellengebirg, ri<choice><orig>n̄</orig><reg>nn</reg></choice>t</l>
+          <l n="270">Seegen von da und dort in die keimende Seele dem Volke.</l>
+          <l n="271">Da<choice><orig>n̄</orig><reg>nn</reg></choice>, da<choice><orig>n̄</orig><reg>nn</reg></choice>, o ihr Freuden <placeName ref="#athen">Athen</placeName>s! ihr Thaten in <placeName ref="#sparta">Sparta</placeName>!</l>
+          <l n="272">K<choice><orig>oͤ</orig><reg>ö</reg></choice><choice><orig>ſ</orig><reg>s</reg></choice>tliche Fr<choice><orig>uͤ</orig><reg>ü</reg></choice>hlingszeit im <placeName ref="#griechenland">Griechenlande</placeName>! we<choice><orig>n̄</orig><reg>nn</reg></choice> un<choice><orig>ſ</orig><reg>s</reg></choice>er</l>
+          <l n="273">Herb<choice><orig>ſ</orig><reg>s</reg></choice>t k<choice><orig>oͤ</orig><reg>ö</reg></choice><choice><orig>m̅</orig><reg>mm</reg></choice>t, we<choice><orig>n̄</orig><reg>nn</reg></choice> ihr gereift, ihr Gei<choice><orig>ſ</orig><reg>s</reg></choice>ter alle der Vorwelt!</l>
+          <l n="274">Wiederkehret und <choice><orig>ſ</orig><reg>s</reg></choice>iehe! des Jahrs Vollendung i<choice><orig>ſ</orig><reg>s</reg></choice>t nahe!</l>
+          <l n="275">Da<choice><orig>n̄</orig><reg>nn</reg></choice> erhalte das Fe<choice><orig>ſ</orig><reg>s</reg></choice>t auch euch, vergangene Tage!</l>
+          <l n="276">Hin nach <placeName ref="#griechenland">Hellas</placeName> <choice><orig>ſ</orig><reg>s</reg></choice>chaue das Volk, und weinend und dankend</l>
+          <l n="277">S<choice><orig>aͤ</orig><reg>ä</reg></choice>nftige <choice><orig>ſ</orig><reg>s</reg></choice>ich in Eri<choice><orig>n̄</orig><reg>nn</reg></choice>erungen der <choice><orig>ſ</orig><reg>s</reg></choice>tolze Triumphtag!</l>
+        </lg>
+        <lg>
+          <l n="278">Aber bl<choice><orig>uͤ</orig><reg>ü</reg></choice>het indeß, bis un<choice><orig>ſ</orig><reg>s</reg></choice>re Fr<choice><orig>uͤ</orig><reg>ü</reg></choice>chte begi<choice><orig>n̄</orig><reg>nn</reg></choice>en,</l>
+          <l n="279">Bl<choice><orig>uͤ</orig><reg>ü</reg></choice>ht, ihr G<choice><orig>aͤ</orig><reg>ä</reg></choice>rten <placeName ref="#ionien">Ionien</placeName>s! nur, und die an <placeName ref="#athen">Athen</placeName>s Schutt</l>
+          <l n="280">Gr<choice><orig>uͤ</orig><reg>ü</reg></choice>nen, ihr Holden! verbergt dem <choice><orig>ſ</orig><reg>s</reg></choice>chauenden Tage die Trauer!</l>
+          <l n="281">Kr<choice><orig>aͤ</orig><reg>ä</reg></choice>nzt mit ewigem Laub, ihr Lorbeerw<choice><orig>aͤ</orig><reg>ä</reg></choice>lder! die H<choice><orig>uͤ</orig><reg>ü</reg></choice>gel</l>
+          <l n="282">Eurer Todten umher, bei <placeName ref="#marathon">Marathon</placeName> dort, wo die Knaben</l>
+          <l n="283">Siegend <choice><orig>ſ</orig><reg>s</reg></choice>tarben, ach! dort auf <placeName ref="#chaeronea">Ch<choice><orig>aͤ</orig><reg>ä</reg></choice>ronea</placeName>s Gefilden,</l>
+          <l n="284">Wo mit den Waffen ins Blut die lezten <persName ref="#athener_innen">Athener</persName> enteilten,</l>
+          <l n="285">Fliehend vor dem Tage der Schmach, dort, dort von den Bergen</l>
+          <l n="286">Klagt ins Schlachtthal t<choice><orig>aͤ</orig><reg>ä</reg></choice>glich herab, dort <choice><orig>ſ</orig><reg>s</reg></choice>inget von <placeName ref="#oeta">Oeta</placeName>s</l>
+          <l n="287">Gipfeln das Schik<choice><orig>ſ</orig><reg>s</reg></choice>aalslied, ihr wandelnden Wa<choice><orig>ſſ</orig><reg>ss</reg></choice>er, herunter!</l>
+          <l n="288">Aber du, un<choice><orig>ſ</orig><reg>s</reg></choice>terblich, we<choice><orig>n̄</orig><reg>nn</reg></choice> auch der <persName ref="#griechen">Griechen</persName>ge<choice><orig>ſ</orig><reg>s</reg></choice>ang <choice><orig>ſ</orig><reg>s</reg></choice>chon</l>
+          <l n="289">Dich nicht feiert, wie <choice><orig>ſ</orig><reg>s</reg></choice>on<choice><orig>ſ</orig><reg>s</reg></choice>t, aus deinen Woogen, o Meergott!</l>
+          <l n="290">T<choice><orig>oͤ</orig><reg>ö</reg></choice>ne mir in die Seele noch oft, daß <choice><orig>uͤ</orig><reg>ü</reg></choice>ber den Wa<choice><orig>ſſ</orig><reg>ss</reg></choice>ern</l>
+          <l n="291">Furchtlosrege der Gei<choice><orig>ſ</orig><reg>s</reg></choice>t, dem Schwi<choice><orig>m̅</orig><reg>mm</reg></choice>er gleich, in der Starken</l>
+          <l n="292">Fri<choice><orig>ſ</orig><reg>s</reg></choice>chem Gl<choice><orig>uͤ</orig><reg>ü</reg></choice>ke <choice><orig>ſ</orig><reg>s</reg></choice>ich <choice><orig>uͤ</orig><reg>ü</reg></choice>b’, und die G<choice><orig>oͤ</orig><reg>ö</reg></choice>tter<choice><orig>ſ</orig><reg>s</reg></choice>prache, das Wech<choice><orig>ſ</orig><reg>s</reg></choice>eln</l>
+          <l n="293">Und das Werden ver<choice><orig>ſ</orig><reg>s</reg></choice>teh’, und we<choice><orig>n̄</orig><reg>nn</reg></choice> die reißende Zeit mir</l>
+          <l n="294">Zu gewaltig das Haupt ergreifft und die Not und das Irr<choice><orig>ſ</orig><reg>s</reg></choice>aal</l>
+          <l n="295">Unter Sterblichen mir mein <choice><orig>ſ</orig><reg>s</reg></choice>terblich Leben er<choice><orig>ſ</orig><reg>s</reg></choice>ch<choice><orig>uͤ</orig><reg>ü</reg></choice>ttert,</l>
+          <l n="296">Laß der Stille mich da<choice><orig>n̄</orig><reg>nn</reg></choice> in deiner Tiefe gedenken.</l>
+        </lg>
+      </div>
+    </body>
+
+    <back>
+      <listApp>
+        <app loc="1-13">
+          <witDetail wit="#H1 #H2">fehlt</witDetail>
+        </app>
+        <app loc="14-31">
+          <witDetail wit="#H2">fehlt</witDetail>
+        </app>
+        <app loc="1">
+          <lem wit="#H4 #J">dir,</lem>
+          <rdg wit="#H3">dir?</rdg>
+        </app>
+        <app loc="2">
+          <lem wit="#H3 #J">Lauf?</lem>
+          <rdg wit="#H4">Lauf,</rdg>
+        </app>
+        <app loc="3">
+          <lem wit="#H4 #J">Fluth,</lem>
+          <rdg wit="#H3">Fluth?</rdg>
+        </app>
+        <app loc="3">
+          <lem wit="#H3 #J">Delphin,</lem>
+          <rdg wit="#H4">Delphin</rdg>
+        </app>
+        <app loc="4">
+          <lem wit="#H3 #J">gelokt,</lem>
+          <rdg wit="#H4">gelokt</rdg>
+        </app>
+        <app loc="5">
+          <lem wit="#H4 #J">Bluͤht</lem>
+          <rdg wit="#H3">Bluͤhet</rdg>
+        </app>
+        <app loc="5">
+          <lem wit="#H4 #J">Ionien?</lem>
+          <rdg wit="#H3">Ionien,</rdg>
+        </app>
+        <app loc="5">
+          <lem wit="#H4 #J">iſts</lem>
+          <rdg wit="#H3">iſt es</rdg>
+        </app>
+        <app loc="5">
+          <lem wit="#H3 #H4">den̄</lem>
+          <rdg wit="#J">Denn</rdg>
+        </app>
+        <app loc="6">
+          <lem wit="#H3 #J">den</lem>
+          <rdg wit="#H4">den̄<note>Schreibfehler</note></rdg>
+        </app>
+        <app loc="6">
+          <lem wit="#H3 #H4">erneut</lem>
+          <rdg wit="#J">erneut,</rdg>
+        </app>
+        <app loc="7">
+          <lem wit="#H3 #H4">erwacht</lem>
+          <rdg wit="#J">erwacht,</rdg>
+        </app>
+        <app loc="7">
+          <lem wit="#H3 #H4">goldner</lem>
+          <rdg wit="#J">goldener</rdg>
+        </app>
+        <app loc="7">
+          <lem wit="#H4 #J">Zeiten</lem>
+          <rdg wit="#H3"><del>Stunden</del><add>Zeiten</add></rdg>
+        </app>
+        <app loc="8">
+          <lem wit="#J">Komm’</lem>
+          <rdg wit="#H3 #H4">Kom̅</rdg>
+        </app>
+        <app loc="8">
+          <rdg wit="#H4"><del>Der Archipelagus.</del><note>unter der Zeile; mit Tinte</note></rdg>
+        </app>
+        <app loc="10">
+          <lem wit="#H3 #H4">Juͤnglingsarmen</lem>
+          <rdg wit="#J">Juͤnglings-Armen</rdg>
+        </app>
+        <app loc="11">
+          <lem wit="#J">Land,</lem>
+          <rdg wit="#H3 #H4">Land</rdg>
+        </app>
+        <app loc="11">
+          <lem wit="#H3 #H4">Vater!</lem>
+          <rdg wit="#J">Vater,</rdg>
+        </app>
+        <app loc="12">
+          <lem wit="#H4">bluͤhenden,</lem>
+          <rdg wit="#H3">bluͤhenden</rdg>
+          <rdg wit="#J">Bluͤhenden,</rdg>
+        </app>
+        <app loc="13">
+          <lem wit="#H3 #H4">ſteht</lem>
+          <rdg wit="#J">ſteht,</rdg>
+        </app>
+        <app loc="13">
+          <lem wit="#H3 #J">Lorbeern</lem>
+          <rdg wit="#H4">Lorbe<add>o</add>r<add>n</add><note>verschrieben</note></rdg>
+        </app>
+        <app loc="14-18">
+          <rdg wit="#H1">
+            Wohnet Paros, und <add>Leſbos gluͤht</add> noch von im̅er seeligen Huͤgeln<lb/>
+            Quillt der Cyp<del>e</del>ri<del>sche</del>er Trank, und von Kalauria toͤnen<lb/>
+            Silberne <del>wie</del> Baͤche, wie einſt, hinab <del>in die</del><add>zur</add> Wooge des Vaters.
+          </rdg>
+        </app>
+        <app loc="15">
+          <lem wit="#J">Haupt,</lem>
+          <rdg wit="#H3 #H4">Haupt</rdg>
+        </app>
+        <app loc="17">
+          <lem wit="#J">Cypriertrank,</lem>
+          <rdg wit="#H3 #H4">Cypriertrank</rdg>
+        </app>
+        <app loc="19">
+          <lem wit="#H3 #H4 #J">die Heroënmuͤtter, die Inſeln,</lem>
+          <rdg wit="#H1">die ſchönen Inſeln, wie vormals<lb/><del>Sie die Muͤtter</del></rdg>
+        </app>
+        <app loc="20">
+          <lem wit="#H3 #H4 #J">Bluͤhend</lem>
+          <rdg wit="#H1"><del>Neugebor</del><add>Bluͤhend</add></rdg>
+        </app>
+        <app loc="20">
+          <lem wit="#H1 #H3 #J">Jahr,</lem>
+          <rdg wit="#H4">Jahr</rdg>
+        </app>
+        <app loc="20-21">
+          <rdg wit="#H1">
+            und wen̄ ſie ſchlafen <del>und altern</del><lb/><del>Und</del> ſo wachſt du<lb/>
+            Wen̄ der unterirrdiſche Tod, <del>auch</del> die gaͤhrende Flam̅e</rdg>
+        </app>
+        <app loc="21">
+          <lem wit="#J">Gewitter,</lem>
+          <rdg wit="#H3 #H4">Gewitter</rdg>
+        </app>
+        <app loc="22">
+          <lem wit="#H3 #H4 #J">Eine</lem>
+          <rdg wit="#H1"><del>Einig</del><add>Eine</add></rdg>
+        </app>
+        <app loc="22">
+          <lem wit="#H1 #H3 #H4">holden</lem>
+          <rdg wit="#J">Holden</rdg>
+        </app>
+        <app loc="22">
+          <lem wit="#H1 #J">ergriff,</lem>
+          <rdg wit="#H3 #H4">ergriff</rdg>
+        </app>
+        <app loc="22">
+          <lem wit="#H1 #H4 #J">Sterbende</lem>
+          <rdg wit="#H3"><del>ſ</del>Sterbende</rdg>
+        </app>
+        <app loc="23">
+          <lem wit="#H3 #H4 #J">Goͤttlicher! du,</lem>
+          <rdg wit="#H1">Alter Vater!</rdg>
+        </app>
+        <app loc="23-24">
+          <lem wit="#H3 #H4 #J">dunkeln<lb/> Tiefen</lem>
+          <rdg wit="#H1"><del>ewgen </del><del>weiten<lb/> Wassern</del><add>dunkeln<lb/> Tiefen</add></rdg>
+        </app>
+        <app loc="24">
+          <lem wit="#H1 #H3 #H4">auf</lem>
+          <rdg wit="#J">auf-</rdg>
+        </app>
+        <app loc="24">
+          <rdg wit="#H4"><del>Der Archipelagus.</del><note>unter der Zeile; mit spitzem Gerät in das Papier geritzt, später mit Tinte</note></rdg>
+        </app>
+        <app loc="25-32">
+          <rdg wit="#H1">
+            <del>Deine Geſpielen, auch ſie, die im̅erbluͤhenden Sterne<lb/></del>
+            <add>Siehe!</add><note>mit Bleistift vorgefügt</note> die Him̅liſchen auch, die höheren Kraͤfte<lb/>
+            <add>Sie,</add><note>mit Bleistift</note><del>die</del> ſtille waltend den heiteren Tag u.<lb/>
+            ſuͤßen Schlum̅er, <del>u.</del> und Leben und Hofnung bringen<lb/>
+            <del>Ueber die St das Hau</del> Fernher bringen über das Haupt<note>über der Zeile eingefügt, nochmals „bringen“</note><lb/>
+            der ahndenden Menſchen, aus <del>ewiger</del><add>der</add><note>mit Bleistift</note> Fuͤlle der<lb/>
+            Freuden, ſie, die hohen <del>Geſpielen</del> <del>im̅er</del><lb/>
+            <del>s</del> <del>regen</del><add>dichteriſchen</add> Geſpielen, wohnen, <del>mit</del> wie einſt<lb/>
+            mit dir u. <add>oft</add> wen̄ am daͤm̅ernden Abend<lb/>
+            von Aſien<del>d</del><add>s</add> dunkeln<note>unterstrichelt</note> Bergen herein, das <del>ein-</del><lb/>
+            <del>ſame</del> Mondlicht koͤm̅t, und <del>mit ihm</del> die<lb/>
+            <del>die</del> Sterne <add>mit ihm</add><note>mit Bleistift</note>, die Bruͤder <del>alle</del><note>mit Bleistift gestrichen</note> sich in deiner<lb/>
+            Wooge begegnen, <del>und</del> leuchteſt auch du vom him̅liſchen
+            </rdg>
+        </app>
+        <app loc="25">
+          <rdg wit="#H3"><del>Siehe!</del><add>Auch</add> die Him̅liſchen<del> auch,</del><add>, sie,</add></rdg>
+        </app>
+        <app loc="26">
+          <lem wit="#J">Ahnung</lem>
+          <rdg wit="#H3">Ahndung</rdg>
+          <rdg wit="#H4">Ahn<del>d</del>ung</rdg>
+        </app>
+        <app loc="28">
+          <lem wit="#J">Geſpielen,</lem>
+          <rdg wit="#H3 #H4">Geſpielen</rdg>
+        </app>
+        <app loc="29">
+          <lem wit="#J">Abend,</lem>
+          <rdg wit="#H3 #H4">Abend</rdg>
+        </app>
+        <app loc="31">
+          <lem wit="#H4">Koͤm̅t</lem>
+          <rdg wit="#H3">Koͤmt</rdg>
+          <rdg wit="#J">Kommt,</rdg>
+        </app>
+        <app loc="32-34">
+          <witDetail wit="#H1 #H2">fehlt</witDetail>
+        </app>
+        <app loc="32">
+          <lem wit="#H3"><add>du</add></lem>
+        </app>
+        <app loc="32">
+          <lem wit="#H3 #J">Glanz,</lem>
+          <rdg wit="#H4">Glanz</rdg>
+        </app>
+        <app loc="33">
+          <lem wit="#H3">Wechſeln</lem>
+          <rdg wit="#H4">W<del>a</del>echſeln</rdg>
+          <rdg wit="#J">Wachſen</rdg>
+        </app>
+        <app loc="33">
+          <lem wit="#H4 #J">dir</lem>
+          <rdg wit="#H3">dir <del>auch</del><note>über der Zeile angefügt, wieder gestrichen</note></rdg>
+        </app>
+        <app loc="34">
+          <lem wit="#J">Nachtgeſang,</lem>
+          <rdg wit="#H3 #H4">Nachtgeſang</rdg>
+        </app>
+        <app loc="35-37">
+          <witDetail wit="#H2">fehlt</witDetail>
+        </app>
+        <app loc="35-37">
+          <rdg wit="#H1"><note>mit Bleistift</note>Er des Orients<note>unter der Zeile</note> Wen̄ die allverklaͤrende dan̄ die Son̄e des Tages<lb/>
+            Sie <add>die</add> Wunderthaͤtig<add>e</add> <del>er</del> naht, <del>des Lich</del> und alle Sterblichen sich in Orients vergessen<lb/>
+            <del>D</del>Sie, des Orients Kind <add>die wunderthaͤ</add> des goldnen Traume <del>nahet</del> <del>naͤhert</del> <add>da ist,</add><lb/>
+            Und die Sterlichen sich im Zauberlichte <add>Nacht</add> vergessen
+          </rdg>
+        </app>
+        <app loc="35">
+          <witDetail wit="#H4">unter dem Schluss des Verses, des letzten auf Blatt 1v, mit Bleistift ein abteilender schräger Strich</witDetail>
+        </app>
+        <app loc="37">
+          <lem wit="#J">all’</lem>
+          <rdg wit="#H3 #H4">all</rdg>
+        </app>
+        <app loc="37">
+          <lem wit="#H3"><del>Sterblichen sich</del><add>Lebenden all</add></lem>
+        </app>
+        <app loc="37">
+          <lem wit="#J">goldenen</lem>
+          <rdg wit="#H3 #H4">goldnen</rdg>
+        </app>
+        <app loc="37">
+          <rdg wit="#H3"><del>vergessen</del><add>begin̄en</add></rdg>
+        </app>
+        <app loc="38-40">
+          <witDetail wit="#H1 #H2">fehlt</witDetail>
+        </app>
+        <app loc="38">
+          <lem wit="#H3 #J">Den</lem>
+          <rdg wit="#H4">Den̄<note>Schreibfehler</note></rdg>
+        </app>
+        <app loc="38">
+          <rdg wit="#H3"><del>gern</del><add>ſtets</add></rdg>
+        </app>
+        <app loc="39">
+          <lem wit="#H4">froheren<note>mit Bleistift unterstrichen</note></lem>
+        </app>
+        <app loc="39">
+          <lem wit="#H3 #J">Zauber,</lem>
+          <rdg wit="#H4">Zauber</rdg>
+        </app>
+        <app loc="40">
+          <lem wit="#H4">Licht iſt<note>mit Bleistift unterstrichen</note></lem>
+        </app>
+        <app loc="40">
+          <lem wit="#H3 #J">nicht</lem>
+          <rdg wit="#H4">nicht,</rdg>
+        </app>
+        <app loc="41">
+          <witDetail wit="#H2">fehlt</witDetail>
+        </app>
+        <app loc="41-42">
+          <rdg wit="#H1"><note>wieder mit Tinte; erster Ansatz:</note>
+            Den̄ die G<del>o</del>lorie,<lb/>
+            <del>Den̄</del>Als de<del>n</del>r <del>purpurne</del> <del>gluͤhende</del> bluͤhende Kranze, der gluͤhende, de<lb/>
+            um die <del>dun</del> ſchattige<add>n</add> Loken <del>ſie</del><note>über der Zeile</note> dir windet<lb/>
+            <note>zweiter Ansatz:</note>
+            Den̄ die <del>hohe</del> Glorie, die der dir <del>aus</del> <del>zum</del> ein <add>goͤttlich</add> Zeichen der Liebe<lb/>
+            <del>Von der Holden</del> Laͤchelnd von <del>ihr</del> der <del>der</del> Holden gereicht, die ſchattige Loke verguͤldet
+          </rdg>
+        </app>
+        <app loc="41">
+          <rdg wit="#H3">Den̄ die G</rdg>
+        </app>
+        <app loc="41">
+          <lem wit="#H4">der<note>mit Bleistift unterstrichen</note></lem>
+        </app>
+        <app loc="41">
+          <lem wit="#H4">de<del>n̄</del><add>n</add></lem>
+        </app>
+        <app loc="42">
+          <witDetail wit="#H2 #H3">fehlt</witDetail>
+        </app>
+        <app loc="42">
+          <witDetail wit="#H4">am Ende des Verses mit Bleistift ein abteilender schräger Strich</witDetail>
+        </app>
+        <app loc="43-97">
+          <witDetail wit="#H1 #H2">fehlt</witDetail>
+        </app>
+        <app loc="43">
+          <lem wit="#H4">umfaͤngt<note>mit Bleistift unterstrichen</note></lem>
+        </app>
+        <app loc="43">
+          <lem wit="#H3 #J">nicht,</lem>
+          <rdg wit="#H4">nicht</rdg>
+        </app>
+        <app loc="43">
+          <lem wit="#H4 #J">Wolken,</lem>
+          <rdg wit="#H3">Wolken</rdg>
+        </app>
+        <app loc="44">
+          <lem wit="#H4 #J">Boten,</lem>
+          <rdg wit="#H3">Boten</rdg>
+        </app>
+        <app loc="45">
+          <lem wit="#H3 #H4">Hoͤhe</lem>
+          <rdg wit="#J">Hoͤhe,</rdg>
+        </app>
+        <app loc="45">
+          <lem wit="#H4">du<note>mit Bleistift unterstrichen</note></lem>
+        </app>
+        <app loc="48">
+          <lem wit="#H4 #J">Maͤander</lem>
+          <rdg wit="#H3"><del>M</del> <del>Maͤa</del> Maͤander<note>die beiden ersten Ansätze verwirren sich mit den Unterlängen des darüberstehenden Versschlusses „Sohn gleich“</note></rdg>
+        </app>
+        <app loc="49">
+          <lem wit="#H3 #H4">enteilt</lem>
+          <rdg wit="#J">enteilt,</rdg>
+        </app>
+        <app loc="50">
+          <lem wit="#H3 H4">entgegenfrohlokt</lem>
+          <rdg wit="#J">entgegen frohlockt</rdg>
+        </app>
+        <app loc="50">
+          <lem wit="#H3 #H4">Erstgeborne</lem>
+          <rdg wit="#J">erstgeborne</rdg>
+        </app>
+        <app loc="51">
+          <lem wit="#H3 #H4">izt</lem>
+          <rdg wit="#J">jetzt</rdg>
+        </app>
+        <app loc="52">
+          <lem wit="#H4 J">aus</lem>
+          <rdg wit="#H3">von</rdg>
+        </app>
+        <app loc="52">
+          <lem wit="#H3 #H4">Waffen,</lem>
+          <rdg wit="#J">Waffen</rdg>
+        </app>
+        <app loc="53">
+          <lem wit="#H3">koͤm̅t,</lem>
+          <rdg wit="#H4">koͤm̅t</rdg>
+          <rdg wit="#J">kommt</rdg>
+        </app>
+        <app loc="53">
+          <lem wit="#H4 #J">sehnende</lem>
+          <rdg wit="#H3">se<del>n</del>hnende</rdg>
+        </app>
+        <app loc="53">
+          <rdg wit="#H4"><del>Der Archipelagus.</del><note>unter der Zeile; mit spitzem Gerät in das Papier geritzt, später mit Tinte</note></rdg>
+        </app>
+        <app loc="54">
+          <lem wit="#J">dir;</lem>
+          <rdg wit="#H3 #H4">dir,</rdg>
+        </app>
+        <app loc="55">
+          <lem wit="#H3 #J">Fels,</lem>
+          <rdg wit="#H4">Fels</rdg>
+        </app>
+        <app loc="55">
+          <lem wit="#H3 #H4">oͤfters</lem>
+          <rdg wit="#J">oͤfter</rdg>
+        </app>
+        <app loc="56">
+          <lem wit="#J">Himmel.</lem>
+          <rdg wit="#H3 #H4">Him̅el,</rdg>
+        </app>
+        <app loc="57">
+          <lem wit="#H3 #J">edlen</lem>
+          <rdg wit="#H4">edeln</rdg>
+        </app>
+        <app loc="58">
+          <lem wit="#H4">di<del>e</del>ch</lem>
+        </app>
+        <app loc="59">
+          <lem wit="#J">bekraͤnzt,</lem>
+          <rdg wit="#H3 #H4">bekraͤnzt</rdg>
+        </app>
+        <app loc="61">
+          <rdg wit="#H4"><del>Der Archipelagus.</del><note>unter der Zeile; mit spitzem Gerät in das Papier geritzt, später mit Tinte „Im̅er Archipelagus.“</note></rdg>
+        </app>
+        <app loc="63">
+          <lem wit="#H3"><del>deinen</del><add>den</add></lem>
+        </app>
+        <app loc="63">
+          <lem wit="#H4 #J">Ufern,</lem>
+          <rdg wit="#H3">Ufern</rdg>
+        </app>
+        <app loc="64">
+          <lem wit="#H3 #H4">Gott!</lem>
+          <rdg wit="#J">Gott,</rdg>
+        </app>
+        <app loc="64">
+          <lem wit="#H3"><del>auch ſie</del><add>dir ganz</add></lem>
+        </app>
+        <app loc="64">
+          <lem wit="#H3 #H4">zuſam̅engeſunken,</lem>
+          <rdg wit="#J">zuſammen geſunken?</rdg>
+        </app>
+        <app loc="65">
+          <lem wit="#H4 #J">iſt noch</lem>
+          <rdg wit="#H3">iſt noch <del>wo iſt</del><note>darüber, wieder gestrichen</note></rdg>
+        </app>
+        <app loc="66">
+          <lem wit="#H3">Wen̄<note>darunter, auf dem Rand beginnend, mit Tinte ein kurzer abteilender Querstrich</note></lem>
+        </app>
+        <app loc="66">
+          <lem wit="#H3">voruͤberkom̅t</lem>
+          <rdg wit="#H4">voruͤberkomt</rdg>
+          <rdg wit="#J">voruͤber kommt</rdg>
+        </app>
+        <app loc="67">
+          <lem wit="#H3 #H4">empor</lem>
+          <rdg wit="#J">empor,</rdg>
+        </app>
+        <app loc="67">
+          <lem wit="#H3">leuchte<del>n</del><add>ten</add></lem>
+        </app>
+        <app loc="69">
+          <lem wit="#H3 #J">Volks, die</lem>
+          <rdg wit="#H4">Volks, d<del>e</del><add>ie</add></rdg>
+        </app>
+        <app loc="69">
+          <lem wit="#H3 #H4">ſtuͤrmiſchbewegte</lem>
+          <rdg wit="#J">ſtuͤrmiſch bewegte</rdg>
+        </app>
+        <app loc="70">
+          <lem wit="#J">her,</lem>
+          <rdg wit="#H3 #H4">her</rdg>
+        </app>
+        <app loc="70">
+          <lem wit="#H3 #H4">eilten</lem>
+          <rdg wit="#J">eilt’ es</rdg>
+        </app>
+        <app loc="71">
+          <lem wit="#H3 #H4">zu geſeegnetem</lem>
+          <rdg wit="#J">zum geſegneten</rdg>
+        </app>
+        <app loc="72">
+          <lem wit="#H3"><del>Sie</del><add>Siehe</add></lem>
+        </app>
+        <app loc="73">
+          <lem wit="#H4">auch ihm</lem>
+          <rdg wit="#J">ihm auch</rdg>
+          <rdg wit="#H3"><add>ihm</add></rdg>
+        </app>
+        <app loc="73">
+          <lem wit="#H3 #H4">Luft</lem>
+          <rdg wit="#J">Luft,</rdg>
+        </app>
+        <app loc="74">
+          <lem wit="#H4"><del>d</del><add>er</add></lem>
+        </app>
+        <app loc="75">
+          <lem wit="#H3 #H4">auſglich</lem>
+          <rdg wit="#J">auſglich,</rdg>
+        </app>
+        <app loc="76">
+          <lem wit="#H3"><del>Kypros</del><add>Cypros</add></lem>
+        </app>
+        <app loc="79">
+          <lem wit="#H3 #J">Stadt,</lem>
+          <rdg wit="#H4">Stadt</rdg>
+        </app>
+        <app loc="79">
+          <lem wit="#H3 #H4">öfters</lem>
+          <rdg wit="#J">öfter</rdg>
+        </app>
+        <app loc="82">
+          <lem wit="#H3 #J">einſamer</lem>
+          <rdg wit="#H4"><del>einſamer</del><add>ſinnender</add></rdg>
+        </app>
+        <app loc="83">
+          <lem wit="#H3 #H4">Weilt</lem>
+          <rdg wit="#J">Weilt,</rdg>
+        </app>
+        <app loc="83">
+          <lem wit="#H3 #J">belauſcht,</lem>
+          <rdg wit="#H4">belauſcht</rdg>
+        </app>
+        <app loc="83">
+          <lem wit="#J">ahndet</lem>
+          <rdg wit="#H3 #H4">ahnet</rdg>
+        </app>
+        <app loc="83">
+          <lem wit="#H3 #J">Ernſte,</lem>
+          <rdg wit="#H4">Ernſte</rdg>
+        </app>
+        <app loc="85">
+          <lem wit="#H3"><del>S</del>Lauſchet</lem>
+        </app>
+        <app loc="85">
+          <lem wit="#J">ſizt,</lem>
+          <rdg wit="#H3 #H4">ſizt</rdg>
+        </app>
+        <app loc="85">
+          <rdg wit="#H4"><del>Der Archipelagus.</del><note>unter der Zeile; mit spitzem Gerät in das Papier geritzt</note></rdg>
+        </app>
+        <app loc="87">
+          <lem wit="#H4 #J">schon,</lem>
+          <rdg wit="#H3">schon</rdg>
+        </app>
+        <app loc="88">
+          <lem wit="#H3 #H4"><del>Volks</del><add>Lands</add></lem>
+          <rdg wit="#J">Lands,</rdg>
+        </app>
+        <app loc="89">
+          <lem wit="#J">Spiel,</lem>
+          <rdg wit="#H3 #H4">Spiel</rdg>
+        </app>
+        <app loc="89">
+          <lem wit="#H3 #H4">noch,</lem>
+          <rdg wit="#J">noch</rdg>
+        </app>
+        <app loc="90">
+          <lem wit="#H3 #H4">in̄ige</lem>
+          <rdg wit="#J">einige</rdg>
+        </app>
+        <app loc="90">
+          <lem wit="#H4 #J">Volk,</lem>
+          <rdg wit="#H3">Volk</rdg>
+        </app>
+        <app loc="91">
+          <lem wit="#H4 #J">Wort</lem>
+          <rdg wit="#H3">Wort,</rdg>
+        </app>
+        <app loc="95">
+          <lem wit="#H3 #H4">nun,</lem>
+          <rdg wit="#J">nun</rdg>
+        </app>
+        <app loc="95">
+          <lem wit="#H4">ſtaͤdteverwuͤſtend</lem>
+          <rdg wit="#H3"><del>ſp</del>ſtaͤdteverwuͤſtend</rdg>
+          <rdg wit="#J">Staͤdte verwuͤſtend</rdg>
+        </app>
+        <app loc="97">
+          <lem wit="#H4 #J">herrliche,</lem>
+          <rdg wit="#H3">herrliche</rdg>
+        </app>
+        <app loc="98-124">
+          <witDetail wit="#H2">fehlt</witDetail>
+        </app>
+        <app loc="98-103">
+          <rdg wit="#H1">
+            von den Bergen zuruͤk die fliehende Greiſe, nach<lb/>
+            den vaͤterlichen Mauern <del>Wohnenden jam̅er</del><note>über „vaͤterlichen Mauern“, mit dunklerer Tinte später hinzugefügt</note> zuruͤk und freundlichen<lb/>
+            Tempeln, aber <del>ſchon</del> es wekt<del>e</del> die Stim̅e<lb/>
+            <del>die</del> der Soͤhne die <del>theuern</del> <del>ſtillen</del> <del>heilgen</del> <del>ſtum̅en</del> <del>geſtuͤrzten Truͤm̅er</del> Aſche nicht mehr und frohlokkend <del>die ſtum̅en</del><lb/>
+            <del>zog</del> zieht mit <del>aus dem</del><note>über „zieht mit“, mit dunklerer Tinte später hinzugefügt</note> der Beute der Perſe<del>r</del><note>später mit dunklerer Tinte gestrichen</note> voruͤber.<add>von hin̄en.</add><note>mit Bleistift gestrichen</note>
+          </rdg>
+        </app>
+        <app loc="99">
+          <lem wit="#J">Tempeln;</lem>
+          <rdg wit="#H3 #H4">Tempeln,</rdg>
+        </app>
+        <app loc="101">
+          <lem wit="#H3"><del>derT</del>im Thal</lem>
+        </app>
+        <app loc="101">
+          <rdg wit="#H4"><note>unter dem Schluss des Verses, wieder getilgt, mit Bleistift ein abteilender schräger Strich</note></rdg>
+        </app>
+        <app loc="102">
+          <lem wit="#H4 #J">dahin,</lem>
+          <rdg wit="#H3">dahin</rdg>
+        </app>
+        <app loc="103">
+          <lem wit="#H3 #H4">Zieht,</lem>
+          <rdg wit="#J">Zieht</rdg>
+        </app>
+        <app loc="103">
+          <rdg wit="#H1">
+            und ſchmaͤhlich <del>war die Wo</del> dienete des <del>Archilagus</del> Archipelagus Wooge<lb/>
+            Weitumher vom <add>Perſischen</add> Ruder gebaͤndigt.
+          </rdg>
+        </app>
+        <app loc="104">
+          <witDetail wit="#H3 #H4 #J">kein Absatz</witDetail>
+        </app>
+        <app loc="104">
+          <witDetail wit="#H4">vor dem Beginn des Verses mit Bleistift (wie am Schluss des Verses 103) ein abteilender schräger Strich</witDetail>
+        </app>
+        <app loc="104-124">
+          <rdg wit="#H1"><note>Entwurf:</note>
+            A o Tag an Salamis Ufern!<lb/>
+            An Salamis Ufern | ſtehn die Atheniſchen<lb/>
+            Jun<del>f</del>gfraun und die Mutter mit dem ge-<lb/>
+            <del>fluͤchteten</del> <add>geretteten</add> Soͤhnlein, und harre<del>t</del>n des Auſgangs,<lb/>
+            und die Stim̅e des Meergotts <add>toͤnt</add> weiſſagend<lb/>
+            herauf! | indeſſen wankt, ein lanſam <add>Ung</add><note>wieder geſtrichen</note> <add>richtend</add> Gewitter<lb/>
+            <del>dor</del> <del>dahin</del> uͤber den ſchaͤumenden <del>tode</del> blutigen Waſſern <del>hin u. wieder</del><lb/>
+            die Schlacht! und ſchon ſteht hoch der Mittag<lb/>
+            uͤber de<del>n</del>m gluͤhenden Haͤuptern <add>Haupte den Kaͤmpfern</add><note>mit Bleistift; weiter mit Tinte</note> <del>jezt jezt don̄ert</del><lb/>
+            es auf! es <del>don̄ern u.</del> <del>ren̄en u.</del><note>über der Zeile</note> es taumeln <add>fallen in die Seiten</add> die Schiffe, die<lb/>
+            gefluͤgelten Schiffe, daß ihre Maſte taumeln,<lb/>
+            u. <del>der</del> <add>ihr</add><note>wieder gestrichen</note> <add>tiefer</add> eherne<del>r</del> <add>vestgezim̅ete</add> Boden unter de<del>r</del>n Fuͤßen<lb/>
+            der Kaͤmpfer bebt,
+          </rdg>
+        </app>
+        <app loc="104-107">
+          <rdg wit="#H3">
+            Aber o Tag <del>am</del> an Salamis Ufern! an Salamis Ufern<lb/>
+            Stehen, harrend des Ends, die Athenerin̄en, die Jungfraun,<lb/>
+            Stehn die Muͤtter und halten im Arm das gerettete Soͤhnlein,<lb/>
+            Harrend des Ends, doch ſchallt zu ihnen die Stim̅e des Meergotts
+          </rdg>
+        </app>
+        <app loc="104-107">
+          <rdg wit="#H4">
+            Aber o Tag an Salamis Ufern! an Salamis Ufern<lb/>
+            Stehn und harren des Ends die Athenerin̄en, die Jungfraun<lb/>
+            Steh die <del>Mutter</del> Muͤtter, <del>haltend</del> wiegend im Arm das gerettete Soͤhnlein,<lb/>
+            Doch den Harrenden ſcha<del>t</del>llt aus Tiefen die Stim̅e des Meergotts
+          </rdg>
+        </app>
+        <app loc="104-107">
+          <rdg wit="#J">
+            Aber o Tag an Salamis Ufern, an Salamis Ufern<lb/>
+            Stehn und harren des Ends die Athenerinnen, die Jungfrauen,<lb/>
+            Steht die Mutter, wiegend im Arm das gerettete Soͤhnlein,<lb/>
+            Doch den Harrenden ſchallt aus Tiefen die Stimme des Meergotts
+          </rdg>
+        </app>
+        <app loc="108-110">
+          <rdg wit="#H3">
+            Heilweiſſagend herauf; den̄ ſich! vorm Auge den Armen<lb/>
+            Wankt ſeit Tageſbegin̄, wie langſamwandelnd Gewitter,
+          </rdg>
+        </app>
+        <app loc="108">
+          <rdg wit="#H4"><del>und</del> es</rdg>
+        </app>
+        <app loc="108">
+          <lem wit="#J">ſchauen</lem>
+          <rdg wit="#H4">ſchaun</rdg>
+        </app>
+        <app loc="110">
+          <lem wit="#J">Wankt</lem>
+          <rdg wit="#H4">Wankt,</rdg>
+        </app>
+        <app loc="110">
+          <lem wit="#H4">langſamwandelnd</lem>
+          <rdg wit="#J">langſam wandelnd</rdg>
+        </app>
+        <app loc="110">
+          <lem wit="#J">Gewitter,</lem>
+          <rdg wit="#H4">Gewitter</rdg>
+        </app>
+        <app loc="111">
+          <lem wit="#J">Dort auf</lem>
+          <rdg wit="#H3">Über</rdg>
+          <rdg wit="#H4"><add>Dort auf</add> <del>Über</del></rdg>
+        </app>
+        <app loc="111">
+          <lem wit="#H3 #J">Schlacht,</lem>
+          <rdg wit="#H4">Schlacht</rdg>
+        </app>
+        <app loc="112">
+          <lem wit="#H3">den Kaͤmpfern</lem>
+          <rdg wit="#J">der Kaͤmpfer</rdg>
+          <rdg wit="#H4">Kaͤmpfern.<note>unter dem Schluss des Verses mit Bleistift ein abteilender Querstrich</note></rdg>
+        </app>
+        <app loc="113-116">
+          <rdg wit="#H3">
+            O und <del>izt</del> jezt, ihr Lenker des Kampfs, ihr <del>Helden</del> Maͤn̄er des Volkes,<lb/>
+            Blikt mit hellerem Aug’, ihr Heroenenkel, ihr Edeln<lb/>
+            Denkt des <add>laͤngſt</add>beſchiedenen Gluͤks, <del>izt</del> jezt zaͤhmet den hohen<lb/>
+            Todverachtenden Genius nicht, o Attikas Kinder!
+          </rdg>
+        </app>
+        <app loc="115">
+          <rdg wit="#H4"><add>es</add><del>jezt</del></rdg>
+        </app>
+        <app loc="115">
+          <lem wit="#H4">Athenes</lem>
+          <rdg wit="#J">Athen’s</rdg>
+        </app>
+        <app loc="116">
+          <lem wit="#J">todverachtenden,</lem>
+          <rdg wit="#H4">todverachtenden</rdg>
+        </app>
+        <app loc="116">
+          <rdg wit="#H4"><add>jezt nicht</add><del>nim̅er</del></rdg>
+        </app>
+        <app loc="116">
+          <lem wit="#J">nicht.</lem>
+          <rdg wit="#H4">nicht;</rdg>
+        </app>
+        <app loc="117">
+          <lem wit="#H4">da<del>l</del>s</lem>
+        </app>
+        <app loc="117-118">
+          <rdg wit="#H3">Ungeheuer des Waldthals<lb/>Noch zulezt verwandelt ſich hebt</rdg>
+        </app>
+        <app loc="119">
+          <lem wit="#H4 #J">Jaͤger</lem>
+          <rdg wit="#H3">Helden</rdg>
+        </app>
+        <app loc="119">
+          <lem wit="#H4">erſchroͤkt;</lem>
+          <rdg wit="#H3">erſchroͤkt,</rdg>
+          <rdg wit="#J">erſchreckt;</rdg>
+        </app>
+        <app loc="119">
+          <lem wit="#H4 #J">kehrt jezt</lem>
+          <rdg wit="#H3">ſo erwacht</rdg>
+        </app>
+        <app loc="120">
+          <lem wit="#H3 #H4">furchtbargeſam̅elt</lem>
+          <rdg wit="#J">furchtbar geſammelt,</rdg>
+        </app>
+        <app loc="120">
+          <lem wit="#H3 #H4">Wilden,</lem>
+          <rdg wit="#J">Wilden</rdg>
+        </app>
+        <app loc="121">
+          <lem wit="#H4 #J">Untergang</lem>
+          <rdg wit="#H3">Untergang,</rdg>
+        </app>
+        <app loc="121">
+          <lem wit="#H4 #J">einmal.</lem>
+          <rdg wit="#H3">einmal,</rdg>
+        </app>
+        <app loc="122">
+          <lem wit="#H3 #H4">begin̄ts;</lem>
+          <rdg wit="#J">beginnts:</rdg>
+        </app>
+        <app loc="122">
+          <lem wit="#H4">Maͤn̄er</lem>
+          <rdg wit="#H3">Maͤn̄er,</rdg>
+          <rdg wit="#J">Maͤnner</rdg>
+        </app>
+        <app loc="123-124">
+          <rdg wit="#H3">
+            Faſſen die Schiffe ſich an, 
+            <del>
+              daß ins Gewaͤſſer die Maſte<lb/>
+              Taumeln und fuͤrchterlich da und dort der krachende Boden<lb/>
+              Unter den Streitern bricht, hinab der geſchmetterte Kiel ſinkt.
+            </del>
+            <note>später, am unteren Rand:</note>
+            in die Wooge <del>taumeln die Maſte</del> taumelt das Steuer<lb/>Unter
+          </rdg>
+        </app>
+        <app loc="124">
+          <lem wit="#H3 #J">Boden,</lem>
+          <rdg wit="#H4">Boden</rdg>
+        </app>
+        <app loc="124">
+          <witDetail wit="#H3 #H4 #J">kein Absatz</witDetail>
+        </app>
+        <app loc="124">
+          <witDetail wit="#H4">unter dem Schluss des Verses mit Bleistift ein abteilender Querstrich</witDetail>
+        </app>
+        <app loc="125-240">
+          <witDetail wit="#H1 #H2">fehlt</witDetail>
+        </app>
+        <app loc="125">
+          <rdg wit="#H3">
+            <del>Und</del> Aber vom <del>S</del>Liede der Schlacht <note>unter der Zeile:</note>vom Liede des Tag<del>e</del>s in ſchwindelnde Traͤume geſungen
+          </rdg>
+        </app>
+        <app loc="125">
+          <lem wit="#H3 #J">geſungen,</lem>
+          <rdg wit="#H4">geſungen</rdg>
+        </app>
+        <app loc="126">
+          <lem wit="#J">Blik;</lem>
+          <rdg wit="#H3 #H4">Blik,</rdg>
+        </app>
+        <app loc="127">
+          <lem wit="#J">er,</lem>
+          <rdg wit="#H3">er</rdg>
+          <rdg wit="#H4"><add>er</add></rdg>
+        </app>
+        <app loc="127">
+          <lem wit="#J">fleht,</lem>
+          <rdg wit="#H3 #H4">fleht</rdg>
+        </app>
+        <app loc="127">
+          <lem wit="#H3">frohlokt,</lem>
+          <rdg wit="#H4 #J">frohlokt</rdg>
+        </app>
+        <app loc="127">
+          <lem wit="#J">Boten.</lem>
+          <rdg wit="#H3">Boten,</rdg>
+          <rdg wit="#H4">Boten</rdg>
+        </app>
+        <app loc="128">
+          <lem wit="#H4 #J">Doch</lem>
+          <rdg wit="#H3"><del>Aber</del><add>Doch</add></rdg>
+        </app>
+        <app loc="129">
+          <lem wit="#H3 #J">Heers,</lem>
+          <rdg wit="#H4">Heers</rdg>
+        </app>
+        <app loc="129">
+          <lem wit="#H4 #J">Schiffe,</lem>
+          <rdg wit="#H3">Schiffe</rdg>
+        </app>
+        <app loc="130">
+          <lem wit="#H3 H4">ihm zahllos,</lem>
+          <rdg wit="#J">zahllos ihm</rdg>
+        </app>
+        <app loc="130">
+          <lem wit="#J">Wooge,</lem>
+          <rdg wit="#H3 #H4">Wooge</rdg>
+        </app>
+        <app loc="131">
+          <lem wit="#H3 #J">Arme,</lem>
+          <rdg wit="#H4">Arme</rdg>
+        </app>
+        <app loc="132">
+          <lem wit="#H3 #J">Flucht,</lem>
+          <rdg wit="#H4">Flucht</rdg>
+        </app>
+        <app loc="132">
+          <lem wit="#H4 #J">geriſſen,</lem>
+          <rdg wit="#H3">geriſſen</rdg>
+        </app>
+        <app loc="134">
+          <lem wit="#H4"><del>Geſchmeid ihm</del><add>Geſchmeid’ ihm</add></lem>
+        </app>
+        <app loc="135">
+          <lem wit="#H3 #H4">erreicht’</lem>
+          <rdg wit="#J">erreicht</rdg>
+        </app>
+        <app loc="135">
+          <witDetail wit="#H3">unter dem Schluss des Verses, des letzten auf S. 7, mit Tinte ein abteilender Querstrich</witDetail>
+        </app>
+        <app loc="135">
+          <witDetail wit="#H4">unter dem Schluss des Verses mit Bleistift durch einen abteilenden schrägen Strich noch mehr verdeutlicht; später mit Tinte: Absatz durch eine Klammer am linken Rand aufgehoben</witDetail>
+        </app>
+        <app loc="135">
+          <witDetail wit="#H4 #J">deutlicher Absatz</witDetail>
+        </app>
+        <app loc="136">
+          <lem wit="#H4"><del>li</del>zuruͤk</lem>
+        </app>
+        <app loc="136">
+          <lem wit="#H3 #H4">einſamharrenden</lem>
+          <rdg wit="#J">einſam harrenden</rdg>
+        </app>
+        <app loc="137">
+          <lem wit="#H3 #H4">Volk</lem>
+          <rdg wit="#J">Volk,</rdg>
+        </app>
+        <app loc="139">
+          <lem wit="#H3 #J">Thal,</lem>
+          <rdg wit="#H4">Thal;</rdg>
+        </app>
+        <app loc="140">
+          <lem wit="#H3 #H4">verlorengeachtete</lem>
+          <rdg wit="#J">verloren geachtete</rdg>
+        </app>
+        <app loc="141">
+          <lem wit="#H3 #H4">die Bruͤſte</lem>
+          <rdg wit="#J">den Buſen</rdg>
+        </app>
+        <app loc="141">
+          <lem wit="#H3 #H4">Juͤngling,</lem>
+          <rdg wit="#J">Juͤngling.</rdg>
+        </app>
+        <app loc="142">
+          <lem wit="#H3 H4">gewelkt</lem>
+          <rdg wit="#J">gewelkt,</rdg>
+        </app>
+        <app loc="143">
+          <lem wit="#H4">Kom̅t</lem>
+          <rdg wit="#H3"><del>Toͤnt</del><add>Koͤm̅t</add></rdg>
+          <rdg wit="#J">Kommt</rdg>
+        </app>
+        <app loc="143">
+          <lem wit="#H3 #H4">hoffnungſmuͤden</lem>
+          <rdg wit="#J">Hofnungſmuͤden</rdg>
+        </app>
+        <app loc="144">
+          <lem wit="#H3"><del>dankende</del><add>liebende</add></lem>
+        </app>
+        <app loc="144">
+          <lem wit="#J">geredet;</lem>
+          <rdg wit="#H3 #H4">geredet,</rdg>
+        </app>
+        <app loc="145">
+          <lem wit="#H3">Kom̅ende<del>t</del><add>n</add></lem>
+        </app>
+        <app loc="146">
+          <lem wit="#H3"><del>Und</del><add>Den̄</add></lem>
+        </app>
+        <app loc="148">
+          <lem wit="#H4">Inſeln</lem>
+          <rdg wit="#H3 #J">Inſeln,</rdg>
+        </app>
+        <app loc="149">
+          <lem wit="#H3 #H4">Wiederkehrt’</lem>
+          <rdg wit="#J">Wiederkehrt’,</rdg>
+        </app>
+        <app loc="149">
+          <lem wit="#H4 #J">Athene</lem>
+          <rdg wit="#H3">Athene,</rdg>
+        </app>
+        <app loc="150">
+          <lem wit="#H3 #H4">fernherglaͤnzend</lem>
+          <rdg wit="#J">fernher glaͤnzend</rdg>
+        </app>
+        <app loc="151">
+          <lem wit="#H4 #J">Gaſſen</lem>
+          <rdg wit="#H3">Gaſſen,</rdg>
+        </app>
+        <app loc="152">
+          <lem wit="#H4 #J">Agora,</lem>
+          <rdg wit="#H3">Agora</rdg>
+        </app>
+        <app loc="153">
+          <lem wit="#H3 #H4">geſtuͤrzt</lem>
+          <rdg wit="#J">geſtuͤrzt,</rdg>
+        </app>
+        <app loc="154">
+          <lem wit="#J">bewegt,</lem>
+          <rdg wit="#H3 #H4">bewegt</rdg>
+        </app>
+        <app loc="154">
+          <lem wit="#H4 #J">und der Treue</lem>
+          <rdg wit="#H3">und Treue</rdg>
+        </app>
+        <app loc="154">
+          <lem wit="#H3 #J">freuend,</lem>
+          <rdg wit="#H4">freuend</rdg>
+        </app>
+        <app loc="155">
+          <lem wit="#H3 #H4">Bunde</lem>
+          <rdg wit="#J">Bund</rdg>
+        </app>
+        <app loc="155">
+          <witDetail wit="#H4">unter dem Schluss des Verses mit Bleistift ein abteilender Querstrich</witDetail>
+        </app>
+        <app loc="156">
+          <lem wit="#H3 #H4">Haußes</lem>
+          <rdg wit="#J">Hauſes</rdg>
+        </app>
+        <app loc="157">
+          <lem wit="#H3 #H4">Man̄;</lem>
+          <rdg wit="#J">Mann,</rdg>
+        </app>
+        <app loc="157">
+          <lem wit="#H3 #J">Halſe,</lem>
+          <rdg wit="#H4">Halſe</rdg>
+        </app>
+        <app loc="158">
+          <lem wit="#H3 #H4">Schlum̅erſtaͤte</lem>
+          <rdg wit="#J">Schlummerſtaͤtte</rdg>
+        </app>
+        <app loc="158">
+          <lem wit="#H3">Weib<del>t</del></lem>
+        </app>
+        <app loc="160">
+          <lem wit="#H3 #H4">Haußes</lem>
+          <rdg wit="#J">Hauſes</rdg>
+        </app>
+        <app loc="162">
+          <lem wit="#H3 #H4">Nachbarn wieder ſich</lem>
+          <rdg wit="#J">Nachbarn ſich</rdg>
+        </app>
+        <app loc="163">
+          <lem wit="#H3 #H4">luftigen</lem>
+          <rdg wit="#J">luͤftigen</rdg>
+        </app>
+        <app loc="163">
+          <witDetail wit="#H4">unter dem Schluss des Verses mit Bleistift ein abteilender Querstrich</witDetail>
+        </app>
+        <app loc="166">
+          <lem wit="#H4">Voͤgeln</lem>
+          <rdg wit="#H3">Voͤg<add>e</add>ln</rdg>
+          <rdg wit="#J">Voͤlkern</rdg>
+        </app>
+        <app loc="166">
+          <lem wit="#H3 #H4">Berge</lem>
+          <rdg wit="#J">Berg</rdg>
+        </app>
+        <app loc="166">
+          <lem wit="#H4">Berg’</lem>
+          <rdg wit="#H3 #J">Berg</rdg>
+        </app>
+        <app loc="167">
+          <lem wit="#H3 #H4">weitumirrenden Stromes</lem>
+          <rdg wit="#J">weit umirrenden Stroms</rdg>
+        </app>
+        <app loc="168">
+          <lem wit="#H3 #H4">ſonst,</lem>
+          <rdg wit="#J">ſonst</rdg>
+        </app>
+        <app loc="168">
+          <lem wit="#J">Muttererde</lem>
+          <rdg wit="#H3">Mutterde</rdg>
+          <rdg wit="#H4">Mutter<del>de</del>erde</rdg>
+        </app>
+        <app loc="169">
+          <lem wit="#J">Volk,</lem>
+          <rdg wit="#H3 #H4">Volk</rdg>
+        </app>
+        <app loc="171">
+          <lem wit="#H3 #J">wehn,</lem>
+          <rdg wit="#H4">wehn</rdg>
+        </app>
+        <app loc="172">
+          <rdg wit="#H3 #H4">heruͤberrauſcht</rdg>
+          <rdg wit="#J">heruͤber rauſcht,</rdg>
+        </app>
+        <app loc="172">
+          <lem wit="#H4 #J">verkuͤndend</lem>
+          <rdg wit="#H3">verkuͤndend,</rdg>
+        </app>
+        <app loc="173">
+          <lem wit="#J">Thaten,</lem>
+          <rdg wit="#H3 #H4">Thaten</rdg>
+        </app>
+        <app loc="174">
+          <lem wit="#H3 #H4">toͤnt</lem>
+          <rdg wit="#J">toͤnt,</rdg>
+        </app>
+        <app loc="174">
+          <lem wit="#H3">Liebli<del>ch</del>ngen</lem>
+        </app>
+        <app loc="175">
+          <lem wit="#H3 #H4">bluͤhn</lem>
+          <rdg wit="#J">bluͤhen</rdg>
+        </app>
+        <app loc="175">
+          <lem wit="#H3 #J">goldnen,</lem>
+          <rdg wit="#H4">goldnen</rdg>
+        </app>
+        <app loc="176">
+          <lem wit="#H3 #H4">gewartet,</lem>
+          <rdg wit="#J">gewartet</rdg>
+        </app>
+        <app loc="177">
+          <lem wit="#J">auf,</lem>
+          <rdg wit="#H3 #H4">auf</rdg>
+        </app>
+        <app loc="177">
+          <lem wit="#H3 #H4">Kolonos</lem>
+          <rdg wit="#J">Kolonas</rdg>
+        </app>
+        <app loc="178">
+          <rdg wit="#H4"><del>Archipelagus.</del></rdg>
+        </app>
+        <app loc="178">
+          <witDetail wit="#H3">am linken Rand nach dem Vers mit Tinte ein abteilender Querstrich</witDetail>
+        </app>
+        <app loc="178">
+          <witDetail wit="#H4">deutlicher Absatz</witDetail>
+        </app>
+        <app loc="178">
+          <witDetail wit="#J">kein Absatz</witDetail>
+        </app>
+        <app loc="179">
+          <lem wit="#H3 #H4">Ehren</lem>
+          <rdg wit="#J">Ehren,</rdg>
+        </app>
+        <app loc="180">
+          <lem wit="#H3 #H4">izt</lem>
+          <rdg wit="#J">jetzt</rdg>
+        </app>
+        <app loc="181">
+          <lem wit="#H3 #H4">Sichergegruͤndet</lem>
+          <rdg wit="#J">Sicher gegruͤndet</rdg>
+        </app>
+        <app loc="181">
+          <lem wit="#H3 #H4">Werk,</lem>
+          <rdg wit="#J">Werk;</rdg>
+        </app>
+        <app loc="181">
+          <lem wit="#H3 #H4">den̄</lem>
+          <rdg wit="#J">den</rdg>
+        </app>
+        <app loc="183">
+          <lem wit="#H3 #H4">im̅errege</lem>
+          <rdg wit="#J">immer Rege</rdg>
+        </app>
+        <app loc="184-185">
+          <lem wit="#H3 #H4">den andern<lb/>Bergen</lem>
+          <rdg wit="#J">dem andern<lb/>Berge</rdg>
+        </app>
+        <app loc="185">
+          <lem wit="#H3"><add>Pentele</add></lem>
+        </app>
+        <app loc="185">
+          <lem wit="#H3 #H4">Erze,</lem>
+          <rdg wit="#J">Erze.</rdg>
+        </app>
+        <app loc="186">
+          <lem wit="#H3 #H4">froh</lem>
+          <rdg wit="#J">froh,</rdg>
+        </app>
+        <app loc="186">
+          <lem wit="#H3 #H4">herrlich</lem>
+          <rdg wit="#J">herrlich,</rdg>
+        </app>
+        <app loc="187">
+          <lem wit="#J">Haͤnden,</lem>
+          <rdg wit="#H3 #H4">Haͤnden</rdg>
+        </app>
+        <app loc="188">
+          <lem wit="#H3 #H4">empor</lem>
+          <rdg wit="#J">empor,</rdg>
+        </app>
+        <app loc="190">
+          <lem wit="#H3 #J">Und</lem>
+          <rdg wit="#H4"><del>Und</del><add>Aber</add></rdg>
+        </app>
+        <app loc="190">
+          <lem wit="#H3 #H4">Helden</lem>
+          <rdg wit="#J">Helden,</rdg>
+        </app>
+        <app loc="191">
+          <lem wit="#H3 #H4">ragt</lem>
+          <rdg wit="#J">ragt,</rdg>
+        </app>
+        <app loc="192">
+          <lem wit="#H3 #H4">ſtehn</lem>
+          <rdg wit="#J">ſtehen</rdg>
+        </app>
+        <app loc="193">
+          <lem wit="#H3 #H4">heiligkuͤhner</lem>
+          <rdg wit="#J">heilig kuͤhner</rdg>
+        </app>
+        <app loc="193">
+          <lem wit="#H4">Gedanke</lem>
+          <rdg wit="#H3 #J">Gedanke,</rdg>
+        </app>
+        <app loc="194">
+          <lem wit="#H3 #H4">Steigt,</lem>
+          <rdg wit="#J">Steigt</rdg>
+        </app>
+        <app loc="194">
+          <lem wit="#H4">nah</lem>
+          <rdg wit="#J">nach</rdg>
+        </app>
+        <app loc="194">
+          <rdg wit="#H3"><del>d</del>in</rdg>
+        </app>
+        <app loc="197">
+          <lem wit="#H3 #H4">empor</lem>
+          <rdg wit="#J">empor,</rdg>
+        </app>
+        <app loc="198">
+          <lem wit="#J">dir</lem>
+          <rdg wit="#H3 #H4">dir,</rdg>
+        </app>
+        <app loc="199">
+          <lem wit="#H3">Vor<del>b</del>gebirge</lem>
+        </app>
+        <app loc="199">
+          <rdg wit="#H4"><del>Archipelagus.</del></rdg>
+        </app>
+        <app loc="200">
+          <lem wit="#H3">Gluͤks<del>!</del>,</lem>
+        </app>
+        <app loc="200">
+          <lem wit="#H3 #H4">from̅en</lem>
+          <rdg wit="#J">Frommen</rdg>
+        </app>
+        <app loc="201">
+          <lem wit="#H3 #J">den Vaͤtern</lem>
+          <rdg wit="#H4">den Vaͤter</rdg>
+        </app>
+        <app loc="201">
+          <lem wit="#J">daheim,</lem>
+          <rdg wit="#H3 #H4">daheim</rdg>
+        </app>
+        <app loc="201">
+          <lem wit="#J">vergeſſen,</lem>
+          <rdg wit="#H3 #H4">vergeſſen</rdg>
+        </app>
+        <app loc="202">
+          <lem wit="#H3 #J">Letheſtrom,</lem>
+          <rdg wit="#h4">Letheſtrom</rdg>
+        </app>
+        <app loc="202">
+          <lem wit="#J">wieder?</lem>
+          <rdg wit="#H3 #H4">wieder,</rdg>
+        </app>
+        <app loc="203">
+          <lem wit="#H3"><del>Siehet</del><add>Sieht</add></lem>
+        </app>
+        <app loc="205">
+          <lem wit="#H3 #H4">Suchende</lem>
+          <rdg wit="#J">suchende</rdg>
+        </app>
+        <app loc="205-206">
+          <rdg wit="#H4">die Sprache,<lb/>Darum die Sage<note>umgestellt durch die Nummer 1 über „Sage“ und 2 über „Sprache“</note></rdg>
+        </app>
+        <app loc="207">
+          <lem wit="#H3 #H4">mir</lem>
+          <rdg wit="#J">nur</rdg>
+        </app>
+        <app loc="207">
+          <lem wit="#H3 #H4">euern</lem>
+          <rdg wit="#J">euren</rdg>
+        </app>
+        <app loc="209">
+          <lem wit="#H3"><del>Aber na</del><note>versehentlicher Ansatz nochmals zu v. 208</note><add>Wo</add><note>unter der Zeile</note></lem>
+        </app>
+        <app loc="209">
+          <lem wit="#H3 #H4">Haupt</lem>
+          <rdg wit="#J">Haupt,</rdg>
+        </app>
+        <app loc="210">
+          <lem wit="#J">ich,</lem>
+          <rdg wit="#H3 #H4">ich</rdg>
+        </app>
+        <app loc="211">
+          <lem wit="#H3 #H4">dort</lem>
+          <rdg wit="#J">dort,</rdg>
+        </app>
+        <app loc="212">
+          <lem wit="#H3 #H4">ich,</lem>
+          <rdg wit="#J">ich</rdg>
+        </app>
+        <app loc="213">
+          <lem wit="#H4 #J">Gruͤn,</lem>
+          <rdg wit="#H3">Gruͤn</rdg>
+        </app>
+        <app loc="214">
+          <lem wit="#H3 #H4">ihr</lem>
+          <rdg wit="#J">Ihr</rdg>
+        </app>
+        <app loc="214">
+          <lem wit="#H3 #H4">all!</lem>
+          <rdg wit="#J">all,</rdg>
+        </app>
+        <app loc="215">
+          <lem wit="#H4 #J">hangenden</lem>
+          <rdg wit="#H3">haͤngenden</rdg>
+        </app>
+        <app loc="216">
+          <lem wit="#H4 #J">wohnen</lem>
+          <rdg wit="#H3">wohnen,</rdg>
+        </app>
+        <app loc="216">
+          <lem wit="#J">Nahmen!</lem>
+          <rdg wit="#H3 #H4">Nahmen,</rdg>
+        </app>
+        <app loc="217">
+          <lem wit="#H4 #J">rufen</lem>
+          <rdg wit="#H3">rufen,</rdg>
+        </app>
+        <app loc="217">
+          <lem wit="#H3 #H4">ihr</lem>
+          <rdg wit="#J">Ihr</rdg>
+        </app>
+        <app loc="219">
+          <lem wit="#H4">from̅e<del>m</del><add>n</add></lem>
+        </app>
+        <app loc="219">
+          <lem wit="#H4 #J">Geſang</lem>
+          <rdg wit="#H3">Geſang,</rdg>
+        </app>
+        <app loc="219">
+          <lem wit="#H3 #H4">suͤhnen</lem>
+          <rdg wit="#J">soͤhnen</rdg>
+        </app>
+        <app loc="219">
+          <lem wit="#H3 #H4">Schatten!</lem>
+          <rdg wit="#J">Schatten,</rdg>
+        </app>
+        <app loc="220">
+          <lem wit="#H4 #J">Bis</lem>
+          <rdg wit="#H3">Bis,</rdg>
+        </app>
+        <app loc="221">
+          <lem wit="#H4">dan̄</lem>
+          <rdg wit="#H3">dan̄,</rdg>
+          <rdg wit="#J">dann</rdg>
+        </app>
+        <app loc="222">
+          <lem wit="#H4 #J">hohen</lem>
+          <rdg wit="#H3">ewigen</rdg>
+        </app>
+        <app loc="222">
+          <lem wit="#H4">Him̅els,</lem>
+          <rdg wit="#H3">Him̅els!</rdg>
+          <rdg wit="#J">Himmels,</rdg>
+        </app>
+        <app loc="225">
+          <lem wit="#H4"><del>U</del>Sternen</lem>
+        </app>
+        <app loc="225">
+          <lem wit="#H3 #J">Luͤfte,</lem>
+          <rdg wit="#H4">Luͤfte</rdg>
+        </app>
+        <app loc="226">
+          <lem wit="#J">Rath,</lem>
+          <rdg wit="#H3 #H4">Rath</rdg>
+        </app>
+        <app loc="226">
+          <lem wit="#H3 #H4">nim̅er</lem>
+          <rdg wit="#J">immer,</rdg>
+        </app>
+        <app loc="227">
+          <lem wit="#H4">Dodon<del>o</del>as</lem>
+        </app>
+        <app loc="228">
+          <lem wit="#J">Stumm</lem>
+          <rdg wit="#H3 #H4">Stum</rdg>
+        </app>
+        <app loc="228">
+          <lem wit="#H3 #J">Gott,</lem>
+          <rdg wit="#H4">Gott</rdg>
+        </app>
+        <app loc="230">
+          <witDetail wit="#H4">unter dem Schluss des Verses mit Tinte ein abteilender Schrägstrich</witDetail>
+        </app>
+        <app loc="231">
+          <lem wit="#H4 #J">Menſchen,</lem>
+          <rdg wit="#H3">Menſchen</rdg>
+        </app>
+        <app loc="233">
+          <lem wit="#H3 #H4">ihr</lem>
+          <rdg wit="#J">Ihr</rdg>
+        </app>
+        <app loc="234">
+          <lem wit="#H3 #H4">ihr</lem>
+          <rdg wit="#J">Ihr</rdg>
+        </app>
+        <app loc="235">
+          <lem wit="#H4 #J">es</lem>
+          <rdg wit="#H3"><add>es</add></rdg>
+        </app>
+        <app loc="235">
+          <lem wit="#H4 #J">Herzen;</lem>
+          <rdg wit="#H3">Herzen,</rdg>
+        </app>
+        <app loc="236">
+          <lem wit="#H3 #J">Kraͤfte,</lem>
+          <rdg wit="#H4">Kraͤfte</rdg>
+        </app>
+        <app loc="237">
+          <lem wit="#H4">Man̄</lem>
+          <rdg wit="#H3">Man̄,</rdg>
+          <rdg wit="#J">Mann</rdg>
+        </app>
+        <app loc="238">
+          <lem wit="#H4 #J">Aether,</lem>
+          <rdg wit="#H3">Aether</rdg>
+        </app>
+        <app loc="239">
+          <lem wit="#H4 #J">Volk</lem>
+          <rdg wit="#H3">Volk,</rdg>
+        </app>
+        <app loc="241-246">
+          <witDetail wit="#H2">fehlt</witDetail>
+        </app>
+        <app loc="241">
+          <lem wit="#H3 #H4">wohnt, wie im Orkus,</lem>
+          <rdg wit="#J">wohnet, wie Orkus,</rdg>
+        </app>
+        <app loc="242">
+          <rdg wit="#H3">Geſchlecht<del>,</del>. <del>a</del>Ans</rdg>
+        </app>
+        <app loc="242">
+          <lem wit="#H3 #H4">Ans eigene Treiben</lem>
+          <rdg wit="#J">Aus eigenen Trieben</rdg>
+        </app>
+        <app loc="243">
+          <lem wit="#H3 #J">allein,</lem>
+          <rdg wit="#H4">allein</rdg>
+        </app>
+        <app loc="231-244">
+          <rdg wit="#H4"><note>später mit blasser Tinte am unteren Rand des Blattes 7r, unter v. 233, und weiter auf Blatt 7v über den Zeilen</note>
+            Alſo ſagt ich: es <del>hatte Wehmuth</del> hatt’ in Luͤften des Aben<del>t</del>ds<lb/>
+            Eine Wehmuth ſeelig und ſuͤß den Sin̄ mir ergriffen<lb/>
+            <del>Und</del> Und ich traumete<note>vielleicht zu schreiben „träumete“</note> fort die Nacht hindurch Da wekte der Hahnſchrei<lb/>
+            Ploͤzlich mich auf, und <del>ein</del> <add>die</add> Loken ergriff, vo<del>m</del>n <del>Hoͤchten</del> <del>den</del> Sternen geſendet<lb/>
+            Wunderbar ein kuͤhlender Hauch, die Don̄er des <del>Vater</del> Hoͤchſten<lb/>
+            Hatten <del>ich</del> zuvor im Ohre getoͤnt, fer<del>h</del>nher, <del>der</del><lb/>
+            den̄ noch gluͤht der Som̅er noch izt nicht.<lb/>
+            Aber hoͤrt, das Wort ist gewiß, <del>u. griffe der Tod</del> und haltet mit Zweifeln<lb/>
+            Mirs <del>nicht auf</del>, ihr <del>Lieb</del> Alten<add>,</add> nicht auf, damit die Gewalt nicht<lb/>
+            Hoch her ſtuͤrz<del>e</del>’ und zertretend auf Truͤm̅er falle der Seegen.<lb/>
+            Dr<del>unten</del>uͤben ſind der Truͤm̅er genug im Griechenland und die hohe<lb/>
+            Roma<note>darüber ein waagerechter Strich</note> liegt, ſie machten zu ſehr zu Menſchen die Goͤtter,<lb/>
+            Aber gewaltiger kom̅t,
+          </rdg>
+        </app>
+        <app loc="241-246">
+          <rdg wit="#H1"><note>Entwurf:</note>
+            Wehe! wie im Orkus, lebt<lb/>
+            <add>ohne Goͤtter</add> das Menſchengeſchlecht, an<del>s</del> <add>die</add> eigene <del>Treiben geſchmiedet</del><lb/>
+            Kunſt, an eigenes<lb/>
+            Wiſſen allein, u. die eigenen Triebe<lb/>
+            geſchmiedet, und in der toſenden<lb/>
+            Werkſtatt, hoͤr<add>e</add>t jeder nur ſich,<lb/>
+            u. Tag u. Nacht arbeiten die Geiſter.<lb/>
+            Aber umſonſt, u. <del>und</del> unfruchtbar, wie<lb/>
+            die Furien, iſt die Sorge und Muͤhe der<lb/>
+            Armen. Den̄
+          </rdg>
+        </app>
+        <app loc="246">
+          <lem wit="#H3 #H4">bleibt</lem>
+          <rdg wit="#J">bleibet</rdg>
+        </app>
+        <app loc="247-269">
+          <witDetail wit="#H1 #H2">fehlt</witDetail>
+        </app>
+        <app loc="247">
+          <lem wit="#H3">Bis,</lem>
+          <rdg wit="#H4 #J">Bis</rdg>
+        </app>
+        <app loc="247">
+          <lem wit="#H3 #H4">aͤngſtigen</lem>
+          <rdg wit="#J">aͤngſtlichen</rdg>
+        </app>
+        <app loc="247">
+          <lem wit="#H3 #H4">Traum,</lem>
+          <rdg wit="#J">Traum</rdg>
+        </app>
+        <app loc="249">
+          <lem wit="#H3 J">vormals</lem>
+          <rdg wit="#H4">vormals,</rdg>
+        </app>
+        <app loc="249">
+          <lem wit="#H3 #H4">oft,</lem>
+          <rdg wit="#J">oft</rdg>
+        </app>
+        <app loc="250">
+          <lem wit="#H3 #H4">Zeit</lem>
+          <rdg wit="#J">Zeit,</rdg>
+        </app>
+        <app loc="251">
+          <lem wit="#H3">fernherwandelnde</lem>
+          <rdg wit="#H4">fernherwa<del>l</del>ndelnde</rdg>
+          <rdg wit="#J">fernher wandelnde</rdg>
+        </app>
+        <app loc="252">
+          <lem wit="#H3 #H4">Stilleweilend</lem>
+          <rdg wit="#J">Stille weilend</rdg>
+        </app>
+        <app loc="253">
+          <lem wit="#H3 #H4">Ach!</lem>
+          <rdg wit="#J">Ach,</rdg>
+        </app>
+        <app loc="253">
+          <lem wit="#H4 #J">goͤttlichgebornen</lem>
+          <rdg wit="#H3">goͤttl<del>l</del>ichgebornen</rdg>
+        </app>
+        <app loc="254">
+          <lem wit="#H3 #H4">als</lem>
+          <rdg wit="#J">all’</rdg>
+        </app>
+        <app loc="256">
+          <lem wit="#H3 #J">Unbeſungen</lem>
+          <rdg wit="#H4">Unbeſu<add>n</add>gen</rdg>
+        </app>
+        <app loc="257">
+          <lem wit="#H3 #J">ſchon hoͤr’ ich ferne des</lem>
+          <rdg wit="#H4">ſchon hoͤr’ ich ferne des<note>darüber:</note><add>ich weiß ja, wo</add></rdg>
+        </app>
+        <app loc="257">
+          <lem wit="#H3 #H4">ferne</lem>
+          <rdg wit="#J">Ferne</rdg>
+        </app>
+        <app loc="258">
+          <lem wit="#H3 #J">Chorgesang auf gruͤnem</lem>
+          <rdg wit="#H4">Chorgesang auf gruͤnem<note>darüber (über den beiden letzten Buchstaben des ersten Wortes einsetzend):</note><add>u. den Ort</add></rdg>
+        </app>
+        <app loc="258">
+          <lem wit="#H4">Gebirg’</lem>
+          <rdg wit="#H3 #J">Gebirg</rdg>
+        </app>
+        <app loc="260">
+          <lem wit="#H3 #H4">im freieren Lied,</lem>
+          <rdg wit="#J">in freierem Lied</rdg>
+        </app>
+        <app loc="261">
+          <lem wit="#H3 #H4">heilig;</lem>
+          <rdg wit="#J">heilig.</rdg>
+        </app>
+        <app loc="262">
+          <lem wit="#H3 #H4">hinauſeilt,</lem>
+          <rdg wit="#J">hinaus eilt</rdg>
+        </app>
+        <app loc="263">
+          <lem wit="#H3 #J">Lands,</lem>
+          <rdg wit="#H4">Lands</rdg>
+        </app>
+        <app loc="265">
+          <lem wit="#H3 #J">auch,</lem>
+          <rdg wit="#H4"><add>auch</add></rdg>
+        </app>
+        <app loc="266">
+          <lem wit="#H4 #J">Menſchlicher Wohnung</lem>
+          <rdg wit="#H3">Menſchlichen Wohnungen</rdg>
+        </app>
+        <app loc="267">
+          <lem wit="#H4">Den̄</lem>
+          <rdg wit="#H3">Den̄,</rdg>
+          <rdg wit="#J">Denn</rdg>
+        </app>
+        <app loc="268">
+          <lem wit="#H3 #H4">Kindern</lem>
+          <rdg wit="#J">Kindern;</rdg>
+        </app>
+        <app loc="261-268">
+          <rdg wit="#H4"><note>später mit blasser Tinte über den Zeilen (außer v. 262):</note>
+            Aber weil ſo nahe <add>ſie</add> mir ſind die gegenwaͤrtigen Goͤtter<lb/>
+            <del>Darf ich</del> Muß ich <del>reden, wie we</del> ſeyn, als waͤren ſie fern, <del>nu</del> und dunkel in Wolken<lb/>
+            Muß ihr Nahme mir ſeyn, nur <del>wenn</del> ehe der Morgen<lb/>
+            Aufglaͤnzt, ehe das Leben im Mittag gluͤhet<lb/>
+            Nen̄’ ich ſtille ſie mir, damit der Dichter das ſeine<lb/>
+            Habe,<note>danach, über der Zeile, ein Kreuz</note> wen̄ aber hinab d<del>ie</del>as him̅liſche Licht geht<lb/>
+            Denk’ ich des vergangenen gern, und ſage – bluͤhet indeß<note>anscheinend Anschluss an v. 278, sodass diese Verse als Ersatz für vv. 261–278 aufzufassen sind</note>
+          </rdg>
+        </app>
+        <app loc="269">
+          <lem wit="#H3 #H4">und,</lem>
+          <rdg wit="#J">und</rdg>
+        </app>
+        <app loc="269">
+          <lem wit="#H3 #H4">Quellengebirg,</lem>
+          <rdg wit="#J">Quellengebuͤrg</rdg>
+        </app>
+        <app loc="270">
+          <witDetail wit="#H2">fehlt</witDetail>
+        </app>
+        <app loc="270">
+          <rdg wit="#H1"><note>vielleicht ein für sich stehender, unausgeführt gebliebener Satz des Entwurfs:</note>
+            Und wandelſt du einſam<lb/>Nim̅er droben Geſtirn?
+          </rdg>
+        </app>
+        <app loc="271-277">
+          <witDetail wit="#H1 #H2">fehlt</witDetail>
+        </app>
+        <app loc="271">
+          <rdg wit="#H3">Dan̄, <add>dan̄ o</add> ihr Freuden Athens! ihr <del>Maͤn̄ert</del>Thaten in Sparta!</rdg>
+        </app>
+        <app loc="271">
+          <rdg wit="#H4"><note>am unteren Rand des Blattes 8r, unmittelbar unter dem Vers:</note>
+            und weissagend redet meine Seele von euch<note>womöglich eine später verworfene Einfügung der späten Variante von 261–268(278), markiert durch das dortige Kreuz</note>
+          </rdg>
+        </app>
+        <app loc="273">
+          <lem wit="#H3">koͤm̅t</lem>
+          <rdg wit="#H4">koͤmt</rdg>
+          <rdg wit="#J">kommt</rdg>
+        </app>
+        <app loc="273">
+          <lem wit="#H3 #H4">wen̄ ihr</lem>
+          <rdg wit="#J">wenn Ihr</rdg>
+        </app>
+        <app loc="273">
+          <lem wit="#H3 #H4">Vorwelt!</lem>
+          <rdg wit="#J">Vorwelt</rdg>
+        </app>
+        <app loc="274">
+          <lem wit="#H4 #J">Wiederkehret</lem>
+          <rdg wit="#H3">Wiederkehr<add>e</add>t</rdg>
+        </app>
+        <app loc="274">
+          <lem wit="#H3 #H4">nahe!</lem>
+          <rdg wit="#J">nahe,</rdg>
+        </app>
+        <app loc="275">
+          <lem wit="#H4">Dan̄ erhalte</lem>
+          <rdg wit="#H3">Dan̄, <del>dan̄ feire</del><add>erhalte</add></rdg>
+          <rdg wit="#J">Dann erhalte</rdg>
+        </app>
+        <app loc="276">
+          <lem wit="#J">Volk,</lem>
+          <rdg wit="#H3 #H4">Volk</rdg>
+        </app>
+        <app loc="277">
+          <lem wit="#H3 #J">ſtolze</lem>
+          <rdg wit="#H4"><del>F</del>ſtolze</rdg>
+        </app>
+        <app loc="277">
+          <rdg wit="#H4"><del>Archipelagus.</del></rdg>
+        </app>
+        <app loc="278-280">
+          <rdg wit="#H1">
+            Bluͤhet indeſſen, ihr Myrthen I<del>i</del>oniens!<lb/>
+            Und ſchlum̅ert ſanft unter<lb/>
+            Ihr Kinder des <del>Kl</del>Gluͤks!
+          </rdg>
+        </app>
+        <app loc="278">
+          <lem wit="#H4 #J">unſre Fruͤchte</lem>
+          <rdg wit="#H2">andre Bluͤthen</rdg>
+          <rdg wit="#H3"><del>andre Bluͤthen</del><add>unſre Fruͤchte</add></rdg>
+        </app>
+        <app loc="279">
+          <rdg wit="#H2">Bluͤ<add>h</add>t</rdg>
+        </app>
+        <app loc="279">
+          <lem wit="#H2 #H3 #H4">Ioniens!</lem>
+          <rdg wit="#J">Ioniens</rdg>
+        </app>
+        <app loc="279">
+          <lem wit="#J">nur,</lem>
+          <rdg wit="#H2">mir,</rdg>
+          <rdg wit="#H3"><del>mi</del>nur,</rdg>
+          <rdg wit="#H4">nur</rdg>
+        </app>
+        <app loc="280">
+          <lem wit="#H3 #H4 #J">verbergt</lem>
+          <rdg wit="#H2">verbergt<note>danach ein Komma getilgt</note></rdg>
+        </app>
+        <app loc="280">
+          <lem wit="#H2 #H3 #H4">Tage</lem>
+          <rdg wit="#J">Tag</rdg>
+        </app>
+        <app loc="280">
+          <lem wit="#H3 #H4 #J">Trauer!</lem>
+          <rdg wit="#H2">Trauer</rdg>
+        </app>
+        <app loc="281-287">
+          <witDetail wit="#H1">fehlt</witDetail>
+        </app>
+        <app loc="281">
+          <lem wit="#H2 #H3 #H4">Lorbeerwaͤlder!</lem>
+          <rdg wit="#J">Lorbeerwaͤlder,</rdg>
+        </app>
+        <app loc="282">
+          <lem wit="#H4 #J">Todten</lem>
+          <rdg wit="#H2">Helden</rdg>
+          <rdg wit="#H3"><del>Helden</del><add>Todten</add></rdg>
+        </app>
+        <app loc="282">
+          <rdg wit="#H2"><del>auf</del><add>bei</add></rdg>
+        </app>
+        <app loc="283">
+          <lem wit="#H3 #H4 #J">Siegend</lem>
+          <rdg wit="#H2">Siegens<note>Schreibfehler</note></rdg>
+        </app>
+        <app loc="283">
+          <lem wit="#H4 #J">ſtarben, ach! dort</lem>
+          <rdg wit="#H2">ſtarben und dort</rdg>
+          <rdg wit="#H3">ſtarben <del>und</del> ach! dort</rdg>
+        </app>
+        <app loc="284">
+          <lem wit="#H2 #H3 #H4">ins Blut</lem>
+          <rdg wit="#J">hinaus</rdg>
+        </app>
+        <app loc="285">
+          <lem wit="#H3 #H4 #J">dort, dort</lem>
+          <rdg wit="#H2">o dort</rdg>
+        </app>
+        <app loc="286">
+          <rdg wit="#H2"><del>ſ</del>dort</rdg>
+        </app>
+        <app loc="287">
+          <rdg wit="#H2">Gip<note>damit bricht die Handschrift ab</note></rdg>
+        </app>
+        <app loc="287">
+          <lem wit="#H3 #H4">ihr</lem>
+          <rdg wit="#J">Ihr</rdg>
+        </app>
+        <app loc="287">
+          <lem wit="#J">Wasser</lem>
+          <rdg wit="#H3 #H4">Wasser<del>!</del>,</rdg>
+        </app>
+        <app loc="288-296">
+          <witDetail wit="#H1 #H2">fehlt</witDetail>
+        </app>
+        <app loc="288">
+          <lem wit="#H3 #J">der</lem>
+          <rdg wit="#H4"><del>G</del>der</rdg>
+        </app>
+        <app loc="292">
+          <lem wit="#H3">uͤb’,</lem>
+          <rdg wit="#H4 #J">uͤb’</rdg>
+        </app>
+        <app loc="292">
+          <lem wit="#H3">Goͤtterſprache,</lem>
+          <rdg wit="#H4 #J">Goͤtterſprache</rdg>
+        </app>
+        <app loc="293">
+          <rdg wit="#H3 #H4">verſteh’</rdg>
+          <rdg wit="#J">verſteh,</rdg>
+        </app>
+        <app loc="294">
+          <lem wit="#H4 #J">Zu</lem>
+          <rdg wit="#H3"><del>Einſt</del>Zu</rdg>
+        </app>
+        <app loc="294">
+          <lem wit="#H3 #H4">ergreifft</lem>
+          <rdg wit="#J">ergreift,</rdg>
+        </app>
+        <app loc="296">
+          <rdg wit="#H4 #J"><note>unter der Zeile:</note>Hoͤlderlin.</rdg>
+        </app>
+      </listApp>
+    </back>
+  </text>
+</TEI>

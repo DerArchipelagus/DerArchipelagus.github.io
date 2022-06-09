@@ -1,0 +1,418 @@
+<html lang="de">
+
+<head>
+  <meta charset="utf-8" />
+  <title>H:DA | Funktionalität</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script type="text/javascript" src="../res/main.js"></script>
+  <link rel="stylesheet" type="text/css" href="../res/main.css">
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light border-bottom">
+    <a class="navbar-brand" href="../index.html">
+      Hölderlin: Der Archipelagus</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="../edition.html">Edition</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dokumentation
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="../pages/einf.html">Einführung</a>
+            <a class="dropdown-item" href="../pages/funkt.html">Funktionalität</a>
+            <a class="dropdown-item" href="../pages/textz.html">Textzeugen</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="../pages/bib.html">Bibliographie & Links</a>
+            <a class="dropdown-item" href="../pages/lizenz.html">Lizenz & Zitieren</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="overlay"></div><a class="btnSidebar openSidebar">Optionen</a>
+  <div class="sidebar"><a href="../pages/funkt.html" target="blank" id="info">ⓘ</a>
+    <div id="accordion">
+      <div class="acc-section">
+        <div><a class="acc-link" data-toggle="collapse" href="#collapseOne" aria-expanded="true">
+            Anzeigeanpassung
+          </a></div>
+        <div id="collapseOne" class="collapse show" data-parent="#accordion">
+          <div class="acc-body">
+            <div class="input-list-head">
+              Textdarstellung
+            </div>
+            <div class="input-list">
+              <div><input type="checkbox" name="input-placename" id="input-placename"><label
+                  for="input-placename">Ortsnamen hervorheben</label></div>
+              <div><input type="checkbox" name="input-persname" id="input-persname"><label
+                  for="input-persname">Personennamen hervorheben</label></div>
+              <div><input type="checkbox" name="input-choice" id="input-choice"><label for="input-choice">Schriftzeichen
+                  normalisieren</label></div>
+            </div>
+            <div class="input-list-head">
+              Interaktionen
+            </div>
+            <div class="input-list">
+              <div><input type="checkbox" name="input-app" id="input-app" checked><label for="input-app">Textkritischen
+                  Apparat anzeigen</label></div>
+              <div><input type="checkbox" name="input-note" id="input-note" checked><label for="input-note">Editorische
+                  Kommentare anzeigen</label></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="acc-section">
+        <div><a class="acc-link collapsed" data-toggle="collapse" href="#collapseTwo">Digitalisate</a></div>
+        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+          <div class="acc-body">
+            <div class="facs">
+              <a href="../img/facs/H1_1r_[1].jpg" target="blank"><img src="../img/facs/H1_1r_[1].jpg" title="H1_1r"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H1_1v_[2].jpg" target="blank"><img src="../img/facs/H1_1v_[2].jpg" title="H1_1v"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H1_2r_[3].jpg" target="blank"><img src="../img/facs/H1_2r_[3].jpg" title="H1_2r"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H1_2v_[4].jpg" target="blank"><img src="../img/facs/H1_2v_[4].jpg" title="H1_2v"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H2_1r_[1].jpg" target="blank"><img src="../img/facs/H2_1r_[1].jpg" title="H2_1r"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H2_1v_[2].jpg" target="blank"><img src="../img/facs/H2_1v_[2].jpg" title="H2_1v"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H3_1r_[1].jpg" target="blank"><img src="../img/facs/H3_1r_[1].jpg" title="H3_1r"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H3_1v_[2].jpg" target="blank"><img src="../img/facs/H3_1v_[2].jpg" title="H3_1v"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H3_2r_[3].jpg" target="blank"><img src="../img/facs/H3_2r_[3].jpg" title="H3_2r"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H3_2v_[4].jpg" target="blank"><img src="../img/facs/H3_2v_[4].jpg" title="H3_2v"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H3_3r_[5].jpg" target="blank"><img src="../img/facs/H3_3r_[5].jpg" title="H3_3r"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H3_3v_[6].jpg" target="blank"><img src="../img/facs/H3_3v_[6].jpg" title="H3_3v"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H3_4r_[7].jpg" target="blank"><img src="../img/facs/H3_4r_[7].jpg" title="H3_4r"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H3_4v_[8].jpg" target="blank"><img src="../img/facs/H3_4v_[8].jpg" title="H3_4v"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H3_5r_[9].jpg" target="blank"><img src="../img/facs/H3_5r_[9].jpg" title="H3_5r"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H3_5v_[10].jpg" target="blank"><img src="../img/facs/H3_5v_[10].jpg" title="H3_5v"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H3_6r_[11].jpg" target="blank"><img src="../img/facs/H3_6r_[11].jpg" title="H3_6r"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H3_6v_[12].jpg" target="blank"><img src="../img/facs/H3_6v_[12].jpg" title="H3_6v"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H3_7r_[13].jpg" target="blank"><img src="../img/facs/H3_7r_[13].jpg" title="H3_7r"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H3_7v_[14].jpg" target="blank"><img src="../img/facs/H3_7v_[14].jpg" title="H3_7v"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H3_8r_[15].jpg" target="blank"><img src="../img/facs/H3_8r_[15].jpg" title="H3_8r"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H3_8v_[16].jpg" target="blank"><img src="../img/facs/H3_8v_[16].jpg" title="H3_8v"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H4_1r_[1].jpg" target="blank"><img src="../img/facs/H4_1r_[1].jpg" title="H4_1r"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H4_1v_[2].jpg" target="blank"><img src="../img/facs/H4_1v_[2].jpg" title="H4_1v"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H4_2r_[3].jpg" target="blank"><img src="../img/facs/H4_2r_[3].jpg" title="H4_2r"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H4_2v_[4].jpg" target="blank"><img src="../img/facs/H4_2v_[4].jpg" title="H4_2v"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H4_3r_[5].jpg" target="blank"><img src="../img/facs/H4_3r_[5].jpg" title="H4_3r"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H4_3v_[6].jpg" target="blank"><img src="../img/facs/H4_3v_[6].jpg" title="H4_3v"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H4_4r_[7].jpg" target="blank"><img src="../img/facs/H4_4r_[7].jpg" title="H4_4r"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H4_4v_[8].jpg" target="blank"><img src="../img/facs/H4_4v_[8].jpg" title="H4_4v"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H4_5r_[9].jpg" target="blank"><img src="../img/facs/H4_5r_[9].jpg" title="H4_5r"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H4_5v_[10].jpg" target="blank"><img src="../img/facs/H4_5v_[10].jpg" title="H4_5v"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H4_6r_[11].jpg" target="blank"><img src="../img/facs/H4_6r_[11].jpg" title="H4_6r"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H4_6v_[12].jpg" target="blank"><img src="../img/facs/H4_6v_[12].jpg" title="H4_6v"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H4_7r_[13].jpg" target="blank"><img src="../img/facs/H4_7r_[13].jpg" title="H4_7r"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H4_7v_[14].jpg" target="blank"><img src="../img/facs/H4_7v_[14].jpg" title="H4_7v"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H4_8r_[15].jpg" target="blank"><img src="../img/facs/H4_8r_[15].jpg" title="H4_8r"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H4_8v_[16].jpg" target="blank"><img src="../img/facs/H4_8v_[16].jpg" title="H4_8v"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H4_9r_[17].jpg" target="blank"><img src="../img/facs/H4_9r_[17].jpg" title="H4_9r"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/H4_9v_[18].jpg" target="blank"><img src="../img/facs/H4_9v_[18].jpg" title="H4_9v"
+                  width="25px" loading="lazy"></a>
+              <a href="../img/facs/J_168-169_[1].png" target="blank"><img src="../img/facs/J_168-169_[1].png"
+                  title="J_168-169" width="25px" loading="lazy"></a>
+              <a href="../img/facs/J_170-171_[2].png" target="blank"><img src="../img/facs/J_170-171_[2].png"
+                  title="J_170-171" width="25px" loading="lazy"></a>
+              <a href="../img/facs/J_172-173_[3].png" target="blank"><img src="../img/facs/J_172-173_[3].png"
+                  title="J_172-173" width="25px" loading="lazy"></a>
+              <a href="../img/facs/J_174-175_[4].png" target="blank"><img src="../img/facs/J_174-175_[4].png"
+                  title="J_174-175" width="25px" loading="lazy"></a>
+              <a href="../img/facs/J_176-177_[5].png" target="blank"><img src="../img/facs/J_176-177_[5].png"
+                  title="J_176-177" width="25px" loading="lazy"></a>
+              <a href="../img/facs/J_178-179_[6].png" target="blank"><img src="../img/facs/J_178-179_[6].png"
+                  title="J_178-179" width="25px" loading="lazy"></a>
+              <a href="../img/facs/J_180-181_[7].png" target="blank"><img src="../img/facs/J_180-181_[7].png"
+                  title="J_180-181" width="25px" loading="lazy"></a>
+              <a href="../img/facs/J_182-183_[8].png" target="blank"><img src="../img/facs/J_182-183_[8].png"
+                  title="J_182-183" width="25px" loading="lazy"></a>
+              <a href="../img/facs/J_184-185_[9].png" target="blank"><img src="../img/facs/J_184-185_[9].png"
+                  title="J_184-185" width="25px" loading="lazy"></a>
+              <a href="../img/facs/J_186-187_[10].png" target="blank"><img src="../img/facs/J_186-187_[10].png"
+                  title="J_186-187" width="25px" loading="lazy"></a>
+              <a href="../img/facs/J_188-189_[11].png" target="blank"><img src="../img/facs/J_188-189_[11].png"
+                  title="J_188-189" width="25px" loading="lazy"></a>
+              <a href="../img/facs/J_190-191_[12].png" target="blank"><img src="../img/facs/J_190-191_[12].png"
+                  title="J_190-191" width="25px" loading="lazy"></a>
+            </div><a href="../pages/textz.html"><i>Zu den Textzeugenbeschreibungen</i></a>
+          </div>
+        </div>
+      </div>
+      <div class="acc-section">
+        <div><a class="acc-link collapsed" data-toggle="collapse" href="#collapseThree">Download-Formate</a></div>
+        <div id="collapseThree" class="collapse" data-parent="#accordion">
+          <div class="acc-body">
+            <div class="dl-links"><a target="blank" href="../edition.xml">XML (TEI)</a><br><a target="blank"
+                href="../download/Der_Archipelagus_orig.txt">Plain Text</a><br><a target="blank"
+                href="../download/Der_Archipelagus_reg.txt">Plain Text (normalisiert)</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid px-5 py-4">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <div class="text-content">
+          <h1>Funktionalität</h1>
+          <p>
+            Die Kodierung im XML/TEI-Format ermöglicht einige Funktionen, die zur Transkription beigetragen werden
+            können. So stehen ihr einige Optionen hinsichtlich der Textdarstellung und Interaktionsmöglichkeiten sowie
+            ein ausführlicher Textapparat zur Seite.
+          </p>
+
+          <h2>Der textkritische Apparat</h2>
+          <p>
+            Der textkritische Apparat, der standardmäßig angezeigt wird, wenn man mit der Maus über dem Vers schwebt,
+            gibt Aufschluss über Lesarten des Verses, Details zu den Textzeugen und editorische Kommentare.
+          </p>
+          <p>
+          <table class="table">
+            <tr>
+              <td>
+                <span class="tei-wit">H¹&nbsp;H²&nbsp;</span>...
+              </td>
+              <td>
+                Der zugehörige Eintrag bezieht sich auf die angegeben Textzeugen. Die Siglen der Handschriften und des
+                Drucks sind in den <a href="">Textzeugenbeschreibungen</a> aufgelöst.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="tei-witdetail"><span class="tei-wit">H¹&nbsp;H²&nbsp;</span>Details</span>
+              </td>
+              <td>
+                Solche Einträge in grauer Schrift geben weitere Informationen zu den genannten Textzeugen, z.&nbsp;B. ob
+                eine Handschrift an dieser Stelle fehlt oder Anmerkungen zur Typographie.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="tei-lem"><span class="tei-wit">H⁴&nbsp;J&nbsp;</span>Graphen</span><span
+                  class="lem-br">]&nbsp;</span><span class="tei-rdg">...</span>
+              </td>
+              <td>
+                Das Lemma, sprich das Wort im Haupttext, auf welches sich der Apparat bezieht, ist mit blauer Schrift
+                geschrieben und ist von einer Lemma-Klammer gefolgt.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="tei-lem">...</span><span class="lem-br">]&nbsp;</span><span class="tei-rdg"><span
+                    class="tei-wit">H³&nbsp;</span>Graphen&nbsp;</span>
+              </td>
+              <td>
+                Dem Lemma gegenüber stehen Lesarten, also eine andere Textfassung, die sich in dem angegebenen
+                Textzeugen finden lässt.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="tei-rdg"><span class="tei-wit">H³&nbsp;</span><span class="tei-del">Graphen</span></span>
+              </td>
+              <td>
+                Streichungen, Tilgungen oder Löschungen durch den Autor werden als solche mit roter Durchstreichung und
+                rötlichem Hintergrund gekennzeichnet.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="tei-rdg"><span class="tei-wit">H³&nbsp;</span><span class="tei-add">Graphen</span></span>
+              </td>
+              <td>
+                Ergänzungen und Hinzufügungen über und unter der Zeile werden mit grünen Ecken oberhalb der Graphenfolge
+                und grünlichem Hintergrund markiert.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="tei-rdg"><span class="tei-wit">H³&nbsp;</span>Graphen<span
+                    class="tei-note">(Notiz)</span></span>
+              </td>
+              <td>
+                Lemmata und Lesarten sind gegebenenfalls mit editorischen Notizen versehen, welche weiteren Aufschluss
+                auf den jeweiligen Bestandteil des Apparateintrags geben können. Diese werden als Asteriske angezeigt.
+                Schwebt man mit dem Mauszeiger über ihnen, wird die Notiz eingeblendet.
+              </td>
+            </tr>
+          </table>
+          </p>
+          <h2>Die Optionen</h2>
+          <p>
+            Am linken Rand befindet sich die Schaltfläche „Optionen“. Ein Klick öffnet verschiedene Möglichkeiten, das
+            Erscheinungsbild des edierten Textes anzupassen sowie eine Übersicht der Faksimilies und Download-Formate. –
+            Sie seien im Folgenden vorgestellt und mit einzelnen Beispielen versehen.
+          </p>
+          <h4>Anzeigeanpassung: Textdarstellung</h4>
+          <h6>Ortsnamen hervorheben</h6>
+          <p>
+            Hölderlin verwendet im „Archipelagus“ – oftmals sind die beschriebenen Ereignisse geographisch markiert –
+            einige Ortsnamen, z. B. die Bezeichnungen griechischer Inseln oder Städte, Gebäude oder Länder. Diese
+            Eigennamen können nun im Text farbig und mit Unterstreichung hervorgehoben werden, indem Sie die Option
+            „Ortsnamen hervorheben“ aktivieren.
+          </p>
+          <p>
+            Zum Ausprobieren:<br />
+          <div style="font-family:'Minion Pro',serif;">
+            <span class="tei-placename">Ortsname</span>
+          </div>
+          </p>
+          <h6>Personennamen hervorheben</h6>
+          <p>
+            Neben den Ortsnamen finden sich auch einige Personennamen, die sich entweder auf einzelne Individuen oder
+            auf Personengruppen beziehen können, die nach dem gleichen Prinzip farbig und mit Unterstreichung
+            hervorgehoben werden können. Zu diesem Zweck ist die Option „Personennamen hervorheben“ zu aktivieren.
+          </p>
+          <p>
+            Zum Ausprobieren:<br />
+          <div style="font-family:'Minion Pro',serif;">
+            <span class="tei-persname">Personenname</span>
+          </div>
+          </p>
+          <h6>Schriftzeichen normalisieren</h6>
+          <p>
+            Die zeitgenössischen Schriften verfügen über verschiedene Graphen, welche heutzutage nicht mehr verwendet
+            werden. Um diese Schriftzeichen zu normalisieren, sprich an unsere heutige Schreibweise anzupassen, kann
+            diese Option aktiviert werden.<br />
+            Betroffene Schriftzeichen sind
+          <ul>
+            <li>die doppelte s-Form; neben dem runden ‹s› tritt ebenso ein Lang-s (‹ſ›) auf, welches zu einem normalen
+              runden ‹s› aufgelöst wird,</li>
+            <li>Nasalbuchstaben mit einem Geminationsstrich (‹m̅›, ‹n̄›), welche den Doppelkonsonanten (‹mm›, ‹nn›) –
+              also solche sind sie in der Fraktur bereits dargestellt – entsprechen,</li>
+            <li>diakritische Zeichen der Umlaute, bei denen es sich in der Kurrent und Fraktur um ein kleines ‹e› über
+              dem Vokal handelt (‹aͤ›, ‹oͤ›, ‹uͤ›), in der heutigen Schreibung um zwei Punkte oder Striche (‹ä›, ‹ö›,
+              ‹ü›).</li>
+          </ul>
+          </p>
+          <p>
+            Zum Ausprobieren:<br />
+          <div style="font-family:'Minion Pro',serif;">
+            [vv. 8ff.] We<span class="tei-choice"><span class="tei-orig">n̄</span><span class="tei-reg">nn</span></span>
+            den Lebenden <span class="tei-choice"><span class="tei-orig">ſ</span><span
+                class="tei-reg">s</span></span>ich das Herz erneut und die er<span class="tei-choice"><span
+                class="tei-orig">ſ</span><span class="tei-reg">s</span></span>te |
+            Liebe den Men<span class="tei-choice"><span class="tei-orig">ſ</span><span
+                class="tei-reg">s</span></span>chen erwacht und goldner Zeiten Eri<span class="tei-choice"><span
+                class="tei-orig">n̄</span><span class="tei-reg">nn</span></span>rung, |
+            Ko<span class="tei-choice"><span class="tei-orig">m̅</span><span class="tei-reg">mm</span></span>’ ich zu
+            dir und gr<span class="tei-choice"><span class="tei-orig">uͤ</span><span class="tei-reg">ü</span></span>ß’
+            in deiner Stille dich, Alter!
+          </div>
+          </p>
+          <h4>Anzeigeanpassung: Interaktionen</h4>
+          <h6>Textkritischen Apparat anzeigen</h6>
+          <p>
+            Der textkritische Apparat, wie er oben genauer erklärt wird, kann mit dieser Option deaktiviert werden.
+            Jegliche Hover-Ereignisse, also die Versnummer auf der linken Seite sowie die Apparatseinträge auf der
+            rechten Seite, werden dann nicht mehr angezeigt.<br />
+            Die Option „Editorische Kommentare anzeigen“ wird in diesem Fall automatisch nicht mehr verwendbar.
+          </p>
+          <h6>Editorische Kommentare anzeigen</h6>
+          <p>
+            Die editorischen Kommentare umfassen zum einen die grau dargestellten Details zu den Textzeugen, zum anderen
+            die editorischen Notizen, welche erscheinen, wenn man über die Asteriske schwebt. Um den Aufbau des
+            Textapparats zu vereinfachen, können sie mit dieser Option nach Wunsch versteckt werden.
+          </p>
+          <h4>Digitalisate</h4>
+          <p>
+            In diesem Abschnitt werden die Bild-Digitalisate der Handschriften und des Erstdrucks aufgelistet. Schwebt
+            man mit dem Zeiger über die Bilder wird angezeigt, um welches Blatt es sich handelt. Per Klick können die
+            Bilder dann in einem neuen Browser-Tab geöffnet werden.<br />
+            Alle Verlinkungen der Digitalisate sind nochmals unter den Beschreibungen der <a
+              href="../pages/textz.html">Textzeugen</a> aufgelistet.
+          </p>
+          <h4>Download-Formate</h4>
+          <p>
+            Hier finden sich verschiedene Formate des edierten Textes. Von besonderem Interesse ist hier wohl die
+            XML/TEI-Datei, welche der tatsächlich angezeigten digitalen Edition zugrunde liegt. Außerdem wird das
+            Gedicht als Plain-Text-Dateien (.txt) gestellt, zum einen mit zeitgenössischen, zum anderen mit
+            normalisierten Schriftzeichen.<br />
+            Streng genommen handelt es sich nicht um Download-Dateien, da sie in einem neuen Browser-Tab geöffnet
+            werden, statt umgehend gedownloadet zu werden. Wer den Text im jeweiligen Format verwenden möchte, muss
+            diesen kopieren oder dem <a
+              href="https://github.com/DerArchipelagus/DerArchipelagus.github.io">GitHub-Repository</a> entnehmen.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer small text-muted border-top">
+    <div class="py-2 px-3 mx-0">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <a href="https://creativecommons.org/licenses/by/4.0/deed.de" target="blank">
+            <img class="float-left mr-2 mt-1 border-0" src="../img/cc_by.png" width="90px" />
+          </a>
+          <p class="mb-0 small licence">
+            Alle Inhalte dieser Seite unterstehen einer CC BY 4.0 Lizenz. Die Rechte an den gezeigten
+            Bilddigitalisaten, soweit nicht anders gekennzeichnet, liegen bei den besitzenden Bibliotheken; mehr
+            Informationen <a href="../pages/lizenz.html">hier</a>.
+          </p>
+        </div>
+        <div class="logo-section col-md-6 text-center">
+          <a href="https://www.gs.uni-heidelberg.de/" target="blank">
+            <img class="logo" src="../img/logo_uni_hd.png" />
+          </a>
+          <a href="https://www.wlb-stuttgart.de/" target="blank">
+            <img class="logo" src="../img/logo_wlb.jpg" />
+          </a>
+          <a href="https://tei-c.org/" target="blank">
+            <img class="logo" src="../img/logo_tei.jpg" />
+          </a>
+          <a href="https://github.com/DerArchipelagus/DerArchipelagus.github.io" target="blank">
+            <img class="logo" src="../img/logo_github.png" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
